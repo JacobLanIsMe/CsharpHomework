@@ -30,31 +30,19 @@ namespace POS
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panelWine = new System.Windows.Forms.Panel();
-            this.labelWinePrice = new System.Windows.Forms.Label();
-            this.labelChiWine = new System.Windows.Forms.Label();
-            this.labelEngWine = new System.Windows.Forms.Label();
-            this.panelWhisky = new System.Windows.Forms.Panel();
-            this.labelWhiskyPrice = new System.Windows.Forms.Label();
-            this.labelChiWhisky = new System.Windows.Forms.Label();
-            this.labelEngWhisky = new System.Windows.Forms.Label();
-            this.panelTequila = new System.Windows.Forms.Panel();
-            this.labelTequilaPrice = new System.Windows.Forms.Label();
-            this.labelEngTequila = new System.Windows.Forms.Label();
-            this.labelChiTequila = new System.Windows.Forms.Label();
-            this.panelBeer = new System.Windows.Forms.Panel();
-            this.labelBeerPrice = new System.Windows.Forms.Label();
-            this.labelEngBeer = new System.Windows.Forms.Label();
-            this.labelChiBeer = new System.Windows.Forms.Label();
+            this.btnWine = new System.Windows.Forms.Button();
+            this.btnWhisky = new System.Windows.Forms.Button();
+            this.btnTequila = new System.Windows.Forms.Button();
+            this.btnBeer = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
+            this.textBoxTotalPrice = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCreditCard = new System.Windows.Forms.Button();
+            this.btnCash = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
@@ -62,10 +50,6 @@ namespace POS
             this.label20 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panelWine.SuspendLayout();
-            this.panelWhisky.SuspendLayout();
-            this.panelTequila.SuspendLayout();
-            this.panelBeer.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -74,180 +58,67 @@ namespace POS
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.panelWine);
-            this.panel1.Controls.Add(this.panelWhisky);
-            this.panel1.Controls.Add(this.panelTequila);
-            this.panel1.Controls.Add(this.panelBeer);
+            this.panel1.Controls.Add(this.btnWine);
+            this.panel1.Controls.Add(this.btnWhisky);
+            this.panel1.Controls.Add(this.btnTequila);
+            this.panel1.Controls.Add(this.btnBeer);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(74, 73);
+            this.panel1.Location = new System.Drawing.Point(5, 73);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(233, 342);
+            this.panel1.Size = new System.Drawing.Size(183, 342);
             this.panel1.TabIndex = 0;
             // 
-            // panelWine
+            // btnWine
             // 
-            this.panelWine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelWine.Controls.Add(this.labelWinePrice);
-            this.panelWine.Controls.Add(this.labelChiWine);
-            this.panelWine.Controls.Add(this.labelEngWine);
-            this.panelWine.Location = new System.Drawing.Point(117, 175);
-            this.panelWine.Name = "panelWine";
-            this.panelWine.Size = new System.Drawing.Size(94, 128);
-            this.panelWine.TabIndex = 2;
+            this.btnWine.BackColor = System.Drawing.Color.White;
+            this.btnWine.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnWine.Location = new System.Drawing.Point(92, 178);
+            this.btnWine.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.btnWine.Name = "btnWine";
+            this.btnWine.Size = new System.Drawing.Size(84, 125);
+            this.btnWine.TabIndex = 4;
+            this.btnWine.Text = "紅酒\n\nWine\n\nNT$320";
+            this.btnWine.UseVisualStyleBackColor = false;
+            this.btnWine.Click += new System.EventHandler(this.btnWine_Click);
             // 
-            // labelWinePrice
+            // btnWhisky
             // 
-            this.labelWinePrice.AutoSize = true;
-            this.labelWinePrice.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWinePrice.Location = new System.Drawing.Point(5, 86);
-            this.labelWinePrice.Name = "labelWinePrice";
-            this.labelWinePrice.Size = new System.Drawing.Size(79, 22);
-            this.labelWinePrice.TabIndex = 8;
-            this.labelWinePrice.Text = "NT$320";
+            this.btnWhisky.BackColor = System.Drawing.Color.White;
+            this.btnWhisky.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnWhisky.Location = new System.Drawing.Point(4, 178);
+            this.btnWhisky.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.btnWhisky.Name = "btnWhisky";
+            this.btnWhisky.Size = new System.Drawing.Size(84, 125);
+            this.btnWhisky.TabIndex = 3;
+            this.btnWhisky.Text = "威士忌\n\nWhisky\n\nNT$350";
+            this.btnWhisky.UseVisualStyleBackColor = false;
+            this.btnWhisky.Click += new System.EventHandler(this.btnWhisky_Click);
             // 
-            // labelChiWine
+            // btnTequila
             // 
-            this.labelChiWine.AutoSize = true;
-            this.labelChiWine.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelChiWine.Location = new System.Drawing.Point(17, 19);
-            this.labelChiWine.Name = "labelChiWine";
-            this.labelChiWine.Size = new System.Drawing.Size(54, 21);
-            this.labelChiWine.TabIndex = 6;
-            this.labelChiWine.Text = "紅酒";
+            this.btnTequila.BackColor = System.Drawing.Color.White;
+            this.btnTequila.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnTequila.Location = new System.Drawing.Point(92, 42);
+            this.btnTequila.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.btnTequila.Name = "btnTequila";
+            this.btnTequila.Size = new System.Drawing.Size(84, 125);
+            this.btnTequila.TabIndex = 2;
+            this.btnTequila.Text = "龍舌蘭\n\nTequila\n\nNT$180";
+            this.btnTequila.UseVisualStyleBackColor = false;
+            this.btnTequila.Click += new System.EventHandler(this.btnTequila_Click);
             // 
-            // labelEngWine
+            // btnBeer
             // 
-            this.labelEngWine.AutoSize = true;
-            this.labelEngWine.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEngWine.Location = new System.Drawing.Point(17, 52);
-            this.labelEngWine.Name = "labelEngWine";
-            this.labelEngWine.Size = new System.Drawing.Size(54, 22);
-            this.labelEngWine.TabIndex = 7;
-            this.labelEngWine.Text = "Wine";
-            // 
-            // panelWhisky
-            // 
-            this.panelWhisky.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelWhisky.Controls.Add(this.labelWhiskyPrice);
-            this.panelWhisky.Controls.Add(this.labelChiWhisky);
-            this.panelWhisky.Controls.Add(this.labelEngWhisky);
-            this.panelWhisky.Location = new System.Drawing.Point(17, 175);
-            this.panelWhisky.Name = "panelWhisky";
-            this.panelWhisky.Size = new System.Drawing.Size(94, 128);
-            this.panelWhisky.TabIndex = 2;
-            // 
-            // labelWhiskyPrice
-            // 
-            this.labelWhiskyPrice.AutoSize = true;
-            this.labelWhiskyPrice.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWhiskyPrice.Location = new System.Drawing.Point(7, 86);
-            this.labelWhiskyPrice.Name = "labelWhiskyPrice";
-            this.labelWhiskyPrice.Size = new System.Drawing.Size(79, 22);
-            this.labelWhiskyPrice.TabIndex = 5;
-            this.labelWhiskyPrice.Text = "NT$350";
-            // 
-            // labelChiWhisky
-            // 
-            this.labelChiWhisky.AutoSize = true;
-            this.labelChiWhisky.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelChiWhisky.Location = new System.Drawing.Point(8, 19);
-            this.labelChiWhisky.Name = "labelChiWhisky";
-            this.labelChiWhisky.Size = new System.Drawing.Size(76, 21);
-            this.labelChiWhisky.TabIndex = 3;
-            this.labelChiWhisky.Text = "威士忌";
-            // 
-            // labelEngWhisky
-            // 
-            this.labelEngWhisky.AutoSize = true;
-            this.labelEngWhisky.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEngWhisky.Location = new System.Drawing.Point(11, 52);
-            this.labelEngWhisky.Name = "labelEngWhisky";
-            this.labelEngWhisky.Size = new System.Drawing.Size(71, 22);
-            this.labelEngWhisky.TabIndex = 4;
-            this.labelEngWhisky.Text = "Whisky";
-            // 
-            // panelTequila
-            // 
-            this.panelTequila.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelTequila.Controls.Add(this.labelTequilaPrice);
-            this.panelTequila.Controls.Add(this.labelEngTequila);
-            this.panelTequila.Controls.Add(this.labelChiTequila);
-            this.panelTequila.Location = new System.Drawing.Point(117, 41);
-            this.panelTequila.Name = "panelTequila";
-            this.panelTequila.Size = new System.Drawing.Size(94, 128);
-            this.panelTequila.TabIndex = 3;
-            // 
-            // labelTequilaPrice
-            // 
-            this.labelTequilaPrice.AutoSize = true;
-            this.labelTequilaPrice.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTequilaPrice.Location = new System.Drawing.Point(6, 86);
-            this.labelTequilaPrice.Name = "labelTequilaPrice";
-            this.labelTequilaPrice.Size = new System.Drawing.Size(79, 22);
-            this.labelTequilaPrice.TabIndex = 4;
-            this.labelTequilaPrice.Text = "NT$180";
-            // 
-            // labelEngTequila
-            // 
-            this.labelEngTequila.AutoSize = true;
-            this.labelEngTequila.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEngTequila.Location = new System.Drawing.Point(10, 52);
-            this.labelEngTequila.Name = "labelEngTequila";
-            this.labelEngTequila.Size = new System.Drawing.Size(70, 22);
-            this.labelEngTequila.TabIndex = 3;
-            this.labelEngTequila.Text = "Tequila";
-            // 
-            // labelChiTequila
-            // 
-            this.labelChiTequila.AutoSize = true;
-            this.labelChiTequila.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelChiTequila.Location = new System.Drawing.Point(7, 19);
-            this.labelChiTequila.Name = "labelChiTequila";
-            this.labelChiTequila.Size = new System.Drawing.Size(76, 21);
-            this.labelChiTequila.TabIndex = 3;
-            this.labelChiTequila.Text = "龍舌蘭";
-            // 
-            // panelBeer
-            // 
-            this.panelBeer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelBeer.Controls.Add(this.labelBeerPrice);
-            this.panelBeer.Controls.Add(this.labelEngBeer);
-            this.panelBeer.Controls.Add(this.labelChiBeer);
-            this.panelBeer.Location = new System.Drawing.Point(18, 41);
-            this.panelBeer.Name = "panelBeer";
-            this.panelBeer.Size = new System.Drawing.Size(94, 128);
-            this.panelBeer.TabIndex = 1;
-            this.panelBeer.Click += new System.EventHandler(this.panelBeer_Click);
-            // 
-            // labelBeerPrice
-            // 
-            this.labelBeerPrice.AutoSize = true;
-            this.labelBeerPrice.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBeerPrice.Location = new System.Drawing.Point(9, 86);
-            this.labelBeerPrice.Name = "labelBeerPrice";
-            this.labelBeerPrice.Size = new System.Drawing.Size(79, 22);
-            this.labelBeerPrice.TabIndex = 2;
-            this.labelBeerPrice.Text = "NT$120";
-            // 
-            // labelEngBeer
-            // 
-            this.labelEngBeer.AutoSize = true;
-            this.labelEngBeer.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEngBeer.Location = new System.Drawing.Point(23, 52);
-            this.labelEngBeer.Name = "labelEngBeer";
-            this.labelEngBeer.Size = new System.Drawing.Size(51, 22);
-            this.labelEngBeer.TabIndex = 1;
-            this.labelEngBeer.Text = "Beer";
-            // 
-            // labelChiBeer
-            // 
-            this.labelChiBeer.AutoSize = true;
-            this.labelChiBeer.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelChiBeer.Location = new System.Drawing.Point(21, 19);
-            this.labelChiBeer.Name = "labelChiBeer";
-            this.labelChiBeer.Size = new System.Drawing.Size(54, 21);
-            this.labelChiBeer.TabIndex = 0;
-            this.labelChiBeer.Text = "啤酒";
+            this.btnBeer.BackColor = System.Drawing.Color.White;
+            this.btnBeer.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnBeer.Location = new System.Drawing.Point(4, 42);
+            this.btnBeer.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.btnBeer.Name = "btnBeer";
+            this.btnBeer.Size = new System.Drawing.Size(84, 125);
+            this.btnBeer.TabIndex = 1;
+            this.btnBeer.Text = "啤酒\n\nBeer\n\nNT$120";
+            this.btnBeer.UseVisualStyleBackColor = false;
+            this.btnBeer.Click += new System.EventHandler(this.btnBeer_Click);
             // 
             // label1
             // 
@@ -262,23 +133,27 @@ namespace POS
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label16);
+            this.panel3.Controls.Add(this.textBoxTotalPrice);
             this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.label14);
-            this.panel3.Location = new System.Drawing.Point(324, 73);
+            this.panel3.Location = new System.Drawing.Point(193, 73);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(191, 98);
+            this.panel3.Size = new System.Drawing.Size(176, 98);
             this.panel3.TabIndex = 1;
             // 
-            // label16
+            // textBoxTotalPrice
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(122, 61);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(62, 22);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "NT$ 0";
+            this.textBoxTotalPrice.BackColor = System.Drawing.Color.Black;
+            this.textBoxTotalPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxTotalPrice.Font = new System.Drawing.Font("Arial", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTotalPrice.ForeColor = System.Drawing.Color.White;
+            this.textBoxTotalPrice.Location = new System.Drawing.Point(22, 52);
+            this.textBoxTotalPrice.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.textBoxTotalPrice.Name = "textBoxTotalPrice";
+            this.textBoxTotalPrice.Size = new System.Drawing.Size(148, 29);
+            this.textBoxTotalPrice.TabIndex = 2;
+            this.textBoxTotalPrice.Text = "NT$ 0";
+            this.textBoxTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label15
             // 
@@ -304,12 +179,12 @@ namespace POS
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.label17);
-            this.panel7.Controls.Add(this.button2);
-            this.panel7.Controls.Add(this.button1);
+            this.panel7.Controls.Add(this.btnCreditCard);
+            this.panel7.Controls.Add(this.btnCash);
             this.panel7.Controls.Add(this.label19);
-            this.panel7.Location = new System.Drawing.Point(324, 177);
+            this.panel7.Location = new System.Drawing.Point(193, 177);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(191, 98);
+            this.panel7.Size = new System.Drawing.Size(176, 98);
             this.panel7.TabIndex = 3;
             // 
             // label17
@@ -317,31 +192,33 @@ namespace POS
             this.label17.AutoSize = true;
             this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label17.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label17.Location = new System.Drawing.Point(98, 74);
+            this.label17.Location = new System.Drawing.Point(81, 74);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(85, 14);
             this.label17.TabIndex = 3;
             this.label17.Text = "信用卡享九折!";
             // 
-            // button2
+            // btnCreditCard
             // 
-            this.button2.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button2.Location = new System.Drawing.Point(96, 37);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 34);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "信用卡";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCreditCard.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnCreditCard.Location = new System.Drawing.Point(88, 37);
+            this.btnCreditCard.Name = "btnCreditCard";
+            this.btnCreditCard.Size = new System.Drawing.Size(82, 34);
+            this.btnCreditCard.TabIndex = 2;
+            this.btnCreditCard.Text = "信用卡";
+            this.btnCreditCard.UseVisualStyleBackColor = true;
+            this.btnCreditCard.Click += new System.EventHandler(this.btnCreditCard_Click);
             // 
-            // button1
+            // btnCash
             // 
-            this.button1.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.Location = new System.Drawing.Point(4, 37);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 34);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "現金";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCash.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnCash.Location = new System.Drawing.Point(3, 37);
+            this.btnCash.Name = "btnCash";
+            this.btnCash.Size = new System.Drawing.Size(82, 34);
+            this.btnCash.TabIndex = 1;
+            this.btnCash.Text = "現金";
+            this.btnCash.UseVisualStyleBackColor = true;
+            this.btnCash.Click += new System.EventHandler(this.btnCash_Click);
             // 
             // label19
             // 
@@ -360,32 +237,32 @@ namespace POS
             this.panel8.Controls.Add(this.listBox1);
             this.panel8.Controls.Add(this.label20);
             this.panel8.Controls.Add(this.label18);
-            this.panel8.Location = new System.Drawing.Point(532, 73);
+            this.panel8.Location = new System.Drawing.Point(373, 73);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(233, 342);
+            this.panel8.Size = new System.Drawing.Size(273, 342);
             this.panel8.TabIndex = 4;
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button3.Location = new System.Drawing.Point(119, 295);
+            this.button3.Location = new System.Drawing.Point(162, 283);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(106, 34);
             this.button3.TabIndex = 4;
             this.button3.Text = "清除清單";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // listBox1
             // 
-            this.listBox1.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.listBox1.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 21;
+            this.listBox1.ItemHeight = 16;
             this.listBox1.Items.AddRange(new object[] {
-            "尚未點餐"});
+            "                        尚未點餐"});
             this.listBox1.Location = new System.Drawing.Point(5, 33);
             this.listBox1.Name = "listBox1";
-            this.listBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.listBox1.Size = new System.Drawing.Size(220, 256);
+            this.listBox1.Size = new System.Drawing.Size(263, 244);
             this.listBox1.TabIndex = 4;
             // 
             // label20
@@ -412,23 +289,15 @@ namespace POS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1194, 921);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "BarPOS";
-            this.Text = "POSForm";
+            this.Text = "Bar POS";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panelWine.ResumeLayout(false);
-            this.panelWine.PerformLayout();
-            this.panelWhisky.ResumeLayout(false);
-            this.panelWhisky.PerformLayout();
-            this.panelTequila.ResumeLayout(false);
-            this.panelTequila.PerformLayout();
-            this.panelBeer.ResumeLayout(false);
-            this.panelBeer.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -442,37 +311,25 @@ namespace POS
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panelWine;
-        private System.Windows.Forms.Label labelWinePrice;
-        private System.Windows.Forms.Label labelChiWine;
-        private System.Windows.Forms.Label labelEngWine;
-        private System.Windows.Forms.Panel panelWhisky;
-        private System.Windows.Forms.Label labelWhiskyPrice;
-        private System.Windows.Forms.Label labelChiWhisky;
-        private System.Windows.Forms.Label labelEngWhisky;
-        private System.Windows.Forms.Panel panelTequila;
-        private System.Windows.Forms.Label labelTequilaPrice;
-        private System.Windows.Forms.Label labelEngTequila;
-        private System.Windows.Forms.Label labelChiTequila;
-        private System.Windows.Forms.Panel panelBeer;
-        private System.Windows.Forms.Label labelBeerPrice;
-        private System.Windows.Forms.Label labelEngBeer;
-        private System.Windows.Forms.Label labelChiBeer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCreditCard;
+        private System.Windows.Forms.Button btnCash;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button btnBeer;
+        private System.Windows.Forms.Button btnWine;
+        private System.Windows.Forms.Button btnWhisky;
+        private System.Windows.Forms.Button btnTequila;
+        private System.Windows.Forms.TextBox textBoxTotalPrice;
     }
 }
 
