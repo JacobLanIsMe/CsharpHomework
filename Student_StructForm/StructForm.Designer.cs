@@ -50,9 +50,10 @@ namespace Student_StructForm
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(131, 89);
+            this.label1.Location = new System.Drawing.Point(284, 178);
+            this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 21);
+            this.label1.Size = new System.Drawing.Size(123, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "姓名:";
             // 
@@ -60,9 +61,10 @@ namespace Student_StructForm
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.Location = new System.Drawing.Point(131, 138);
+            this.label2.Location = new System.Drawing.Point(284, 276);
+            this.label2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 21);
+            this.label2.Size = new System.Drawing.Size(123, 42);
             this.label2.TabIndex = 1;
             this.label2.Text = "國文:";
             // 
@@ -70,9 +72,10 @@ namespace Student_StructForm
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label3.Location = new System.Drawing.Point(131, 187);
+            this.label3.Location = new System.Drawing.Point(284, 374);
+            this.label3.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 21);
+            this.label3.Size = new System.Drawing.Size(123, 42);
             this.label3.TabIndex = 2;
             this.label3.Text = "英文:";
             // 
@@ -80,50 +83,56 @@ namespace Student_StructForm
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label4.Location = new System.Drawing.Point(131, 236);
+            this.label4.Location = new System.Drawing.Point(284, 472);
+            this.label4.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 21);
+            this.label4.Size = new System.Drawing.Size(123, 42);
             this.label4.TabIndex = 3;
             this.label4.Text = "數學:";
             // 
             // textBoxName
             // 
             this.textBoxName.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBoxName.Location = new System.Drawing.Point(226, 84);
+            this.textBoxName.Location = new System.Drawing.Point(490, 168);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(100, 30);
+            this.textBoxName.Size = new System.Drawing.Size(212, 53);
             this.textBoxName.TabIndex = 4;
             // 
             // textBoxChinese
             // 
             this.textBoxChinese.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxChinese.Location = new System.Drawing.Point(226, 133);
+            this.textBoxChinese.Location = new System.Drawing.Point(490, 266);
+            this.textBoxChinese.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.textBoxChinese.Name = "textBoxChinese";
-            this.textBoxChinese.Size = new System.Drawing.Size(100, 30);
+            this.textBoxChinese.Size = new System.Drawing.Size(212, 53);
             this.textBoxChinese.TabIndex = 5;
             // 
             // textBoxEnglish
             // 
             this.textBoxEnglish.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxEnglish.Location = new System.Drawing.Point(226, 182);
+            this.textBoxEnglish.Location = new System.Drawing.Point(490, 364);
+            this.textBoxEnglish.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.textBoxEnglish.Name = "textBoxEnglish";
-            this.textBoxEnglish.Size = new System.Drawing.Size(100, 30);
+            this.textBoxEnglish.Size = new System.Drawing.Size(212, 53);
             this.textBoxEnglish.TabIndex = 6;
             // 
             // textBoxMath
             // 
             this.textBoxMath.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMath.Location = new System.Drawing.Point(226, 231);
+            this.textBoxMath.Location = new System.Drawing.Point(490, 462);
+            this.textBoxMath.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.textBoxMath.Name = "textBoxMath";
-            this.textBoxMath.Size = new System.Drawing.Size(100, 30);
+            this.textBoxMath.Size = new System.Drawing.Size(212, 53);
             this.textBoxMath.TabIndex = 7;
             // 
             // btnSaveContent
             // 
             this.btnSaveContent.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnSaveContent.Location = new System.Drawing.Point(67, 301);
+            this.btnSaveContent.Location = new System.Drawing.Point(145, 602);
+            this.btnSaveContent.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnSaveContent.Name = "btnSaveContent";
-            this.btnSaveContent.Size = new System.Drawing.Size(153, 34);
+            this.btnSaveContent.Size = new System.Drawing.Size(332, 68);
             this.btnSaveContent.TabIndex = 8;
             this.btnSaveContent.Text = "儲存";
             this.btnSaveContent.UseVisualStyleBackColor = true;
@@ -132,9 +141,10 @@ namespace Student_StructForm
             // btnShowContent
             // 
             this.btnShowContent.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnShowContent.Location = new System.Drawing.Point(226, 301);
+            this.btnShowContent.Location = new System.Drawing.Point(490, 602);
+            this.btnShowContent.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnShowContent.Name = "btnShowContent";
-            this.btnShowContent.Size = new System.Drawing.Size(153, 34);
+            this.btnShowContent.Size = new System.Drawing.Size(332, 68);
             this.btnShowContent.TabIndex = 9;
             this.btnShowContent.Text = "顯示儲存內容";
             this.btnShowContent.UseVisualStyleBackColor = true;
@@ -145,9 +155,11 @@ namespace Student_StructForm
             this.groupBox1.Controls.Add(this.labelMaxMinScore);
             this.groupBox1.Controls.Add(this.labelScore);
             this.groupBox1.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox1.Location = new System.Drawing.Point(385, 55);
+            this.groupBox1.Location = new System.Drawing.Point(829, 110);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(256, 263);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.groupBox1.Size = new System.Drawing.Size(595, 526);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "成績";
@@ -155,26 +167,30 @@ namespace Student_StructForm
             // labelMaxMinScore
             // 
             this.labelMaxMinScore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelMaxMinScore.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelMaxMinScore.Location = new System.Drawing.Point(5, 177);
+            this.labelMaxMinScore.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labelMaxMinScore.Location = new System.Drawing.Point(6, 354);
+            this.labelMaxMinScore.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.labelMaxMinScore.Name = "labelMaxMinScore";
-            this.labelMaxMinScore.Size = new System.Drawing.Size(247, 78);
+            this.labelMaxMinScore.Size = new System.Drawing.Size(584, 154);
             this.labelMaxMinScore.TabIndex = 1;
             // 
             // labelScore
             // 
             this.labelScore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelScore.Location = new System.Drawing.Point(5, 29);
+            this.labelScore.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labelScore.Location = new System.Drawing.Point(6, 58);
+            this.labelScore.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.labelScore.Name = "labelScore";
-            this.labelScore.Size = new System.Drawing.Size(247, 143);
+            this.labelScore.Size = new System.Drawing.Size(584, 284);
             this.labelScore.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.Location = new System.Drawing.Point(437, 324);
+            this.button1.Location = new System.Drawing.Point(986, 648);
+            this.button1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 34);
+            this.button1.Size = new System.Drawing.Size(433, 68);
             this.button1.TabIndex = 11;
             this.button1.Text = "最高分/最低分科目";
             this.button1.UseVisualStyleBackColor = true;
@@ -182,9 +198,9 @@ namespace Student_StructForm
             // 
             // StructForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1733, 900);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnShowContent);
@@ -197,6 +213,7 @@ namespace Student_StructForm
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "StructForm";
             this.Text = "Student_StructForm";
             this.groupBox1.ResumeLayout(false);

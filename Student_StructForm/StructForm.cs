@@ -37,7 +37,10 @@ namespace Student_StructForm
         private void button1_Click(object sender, EventArgs e)
         {
             int[] score = { student.ChineseScore, student.EnglishScore, student.MathScore };
-            labelMaxMinScore.Text = $"最高科目成績為: {score.Max()}\n最低科目成績為: {score.Min()}";
+            string[] subject = { "國文", "英文", "數學" };
+            int maxScoreIndex = score.ToList().IndexOf(score.Max());
+            int minScoreIndex = score.ToList().IndexOf(score.Min());
+            labelMaxMinScore.Text = $"最高科目成績為: {subject[maxScoreIndex]}{score.Max()}分\n最低科目成績為: {subject[minScoreIndex]}{score.Min()}分";
         }
     }
     public struct Student
