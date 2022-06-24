@@ -16,13 +16,14 @@ namespace GuessNumber
         {
             InitializeComponent();
         }
-        public static int answer;
+        public int answer;
         private void btnGuess_Click(object sender, EventArgs e)
         {
             YourNumber yournumberform = new YourNumber();
             Random random = new Random();
             answer = random.Next(1, 100);
-            yournumberform.ShowDialog(this);
+            //yournumberform.ShowDialog(this);
+            yournumberform.Show(this);
         }
 
         public string GetLabelConditionText
@@ -33,7 +34,11 @@ namespace GuessNumber
 
         private void btnShowAnswer_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"Answer: {answer}");
+            DialogResult result  = MessageBox.Show($"Answer: {answer}", "答案", MessageBoxButtons.OK);
+            if (result == DialogResult.OK)
+            {
+                labelCondition.Text = "Please Select A Number Between 0 to 100";
+            }
         }
     }
 }

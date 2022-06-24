@@ -26,7 +26,7 @@ namespace GuessNumber
             {
                 GuessNumberForm guessNumberForm = (GuessNumberForm) this.Owner;
              
-                if (yourNumber > GuessNumberForm.answer)
+                if (yourNumber > guessNumberForm.answer)
                 {
                     yourNumberMax = yourNumber;
                     guessNumberForm.GetLabelConditionText = $"Too Large!!!\nBetween {yourNumberMin} and {yourNumberMax}";
@@ -34,7 +34,7 @@ namespace GuessNumber
                     textBoxYourNumber.Select(0, textBoxYourNumber.Text.Length);
 
                 }
-                else if (yourNumber < GuessNumberForm.answer)
+                else if (yourNumber < guessNumberForm.answer)
                 {
                     yourNumberMin = yourNumber;
                     guessNumberForm.GetLabelConditionText = $"Too Samll!!!\nBetween {yourNumberMin} and {yourNumberMax}";
@@ -43,7 +43,7 @@ namespace GuessNumber
                 }
                 else
                 {
-                    MessageBox.Show($"Congradulations!!! You got {GuessNumberForm.answer}!!!");
+                    MessageBox.Show($"Congradulations!!! You got {guessNumberForm.answer}!!!");
                     this.Close();
                     guessNumberForm.GetLabelConditionText = "Please Select A Number Between 0 to 100";
                 }
