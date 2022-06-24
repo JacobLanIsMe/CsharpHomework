@@ -63,7 +63,7 @@ namespace ScreenSaver
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ScreenSaverForm_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ScreenSaverForm_KeyDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ScreenSaverForm_MouseMove);
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 

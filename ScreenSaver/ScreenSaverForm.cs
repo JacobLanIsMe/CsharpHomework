@@ -31,10 +31,7 @@ namespace ScreenSaver
             
         }
 
-        private void ScreenSaverForm_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (DateTime.Now.Second - formLoadSecond > 2) Application.Exit();
-        }
+
 
         private void ScreenSaverForm_KeyDown(object sender, KeyEventArgs e)
         {
