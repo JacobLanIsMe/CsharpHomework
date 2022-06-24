@@ -139,7 +139,7 @@ namespace StudentsGrade
             // btnRandomStudent
             // 
             this.btnRandomStudent.Font = new System.Drawing.Font("標楷體", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnRandomStudent.Location = new System.Drawing.Point(27, 242);
+            this.btnRandomStudent.Location = new System.Drawing.Point(27, 240);
             this.btnRandomStudent.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnRandomStudent.Name = "btnRandomStudent";
             this.btnRandomStudent.Size = new System.Drawing.Size(163, 32);
@@ -152,7 +152,7 @@ namespace StudentsGrade
             // 
             this.btnStatistics.Enabled = false;
             this.btnStatistics.Font = new System.Drawing.Font("標楷體", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnStatistics.Location = new System.Drawing.Point(27, 273);
+            this.btnStatistics.Location = new System.Drawing.Point(27, 272);
             this.btnStatistics.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnStatistics.Name = "btnStatistics";
             this.btnStatistics.Size = new System.Drawing.Size(163, 32);
@@ -203,7 +203,7 @@ namespace StudentsGrade
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.labelStatistics);
-            this.splitContainer1.Size = new System.Drawing.Size(509, 366);
+            this.splitContainer1.Size = new System.Drawing.Size(521, 366);
             this.splitContainer1.SplitterDistance = 278;
             this.splitContainer1.SplitterWidth = 2;
             this.splitContainer1.TabIndex = 21;
@@ -224,7 +224,7 @@ namespace StudentsGrade
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(502, 27);
             this.labelTitle.TabIndex = 9;
-            this.labelTitle.Text = "姓名    國文   英文   數學   總分   平均    最低    最高";
+            this.labelTitle.Text = "姓名       國文   英文   數學   總分   平均    最低    最高";
             // 
             // labelStatistics
             // 
@@ -257,7 +257,7 @@ namespace StudentsGrade
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.Name = "StudentsGradeForm";
-            this.Text = "StudentsGrade";
+            this.Text = "StudentGrade";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);

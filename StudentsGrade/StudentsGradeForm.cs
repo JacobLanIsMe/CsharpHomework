@@ -23,21 +23,12 @@ namespace StudentsGrade
         public string subjectStatisticResult;
         private void btnAddStudent_Click(object sender, EventArgs e)
         {
-            
             result = "";
             string name = textBoxName.Text;
-            string chinese = textBoxChinese.Text;
-            string english = textBoxEnglish.Text;
-            string math = textBoxMath.Text;
-            List<int> score = new List<int> { Convert.ToInt32(chinese), Convert.ToInt32(english), Convert.ToInt32(math) };
-            List<string> subject = new List<string> { "國文", "英文", "數學" };
-            int maxScoreIndex = score.IndexOf(score.Max());
-            int minScoreIndex = score.IndexOf(score.Min());
-            string sumScore = score.Sum().ToString();
-            string averageScore = (Math.Round(score.Average(), 1, MidpointRounding.AwayFromZero)).ToString();
-            string maxSubjectScore = $"{subject[maxScoreIndex]}{score[maxScoreIndex]}";
-            string minSubjectScore = $"{subject[minScoreIndex]}{score[minScoreIndex]}";
-            students.Add(new Student(name, chinese, english, math, sumScore, averageScore, minSubjectScore, maxSubjectScore));
+            int chinese = Convert.ToInt32(textBoxChinese.Text);
+            int english = Convert.ToInt32(textBoxEnglish.Text);
+            int math = Convert.ToInt32(textBoxMath.Text);
+            CalAllScoreInfo(name, chinese, english, math);
             ShowTableResult();
             if (result != "") 
             {
@@ -55,15 +46,7 @@ namespace StudentsGrade
             int chinese = random.Next(101);
             int english = random.Next(101);
             int math = random.Next(101);
-            List<int> score = new List<int> { chinese, english, math };
-            List<string> subject = new List<string> { "國文", "英文", "數學" };
-            int maxScoreIndex = score.IndexOf(score.Max());
-            int minScoreIndex = score.IndexOf(score.Min());
-            string sumScore = score.Sum().ToString();
-            string averageScore = (Math.Round(score.Average(), 1, MidpointRounding.AwayFromZero)).ToString();
-            string maxSubjectScore = $"{subject[maxScoreIndex]}{score[maxScoreIndex]}";
-            string minSubjectScore = $"{subject[minScoreIndex]}{score[minScoreIndex]}";
-            students.Add(new Student(name, chinese.ToString(), english.ToString(), math.ToString(), sumScore, averageScore, minSubjectScore, maxSubjectScore));
+            CalAllScoreInfo(name, chinese, english, math);
             ShowTableResult();
             if (result != "")
             {
@@ -82,15 +65,7 @@ namespace StudentsGrade
                 int chinese = random.Next(101);
                 int english = random.Next(101);
                 int math = random.Next(101);
-                List<int> score = new List<int> { chinese, english, math };
-                List<string> subject = new List<string> { "國文", "英文", "數學" };
-                int maxScoreIndex = score.IndexOf(score.Max());
-                int minScoreIndex = score.IndexOf(score.Min());
-                string sumScore = score.Sum().ToString();
-                string averageScore = (Math.Round(score.Average(), 1, MidpointRounding.AwayFromZero)).ToString();
-                string maxSubjectScore = $"{subject[maxScoreIndex]}{score[maxScoreIndex]}";
-                string minSubjectScore = $"{subject[minScoreIndex]}{score[minScoreIndex]}";
-                students.Add(new Student(name, chinese.ToString(), english.ToString(), math.ToString(), sumScore, averageScore, minSubjectScore, maxSubjectScore));
+                CalAllScoreInfo(name, chinese, english, math);
             }
             ShowTableResult();
             if (result != "")
@@ -99,15 +74,7 @@ namespace StudentsGrade
                 labelScore.BorderStyle = BorderStyle.FixedSingle;
             }
         }
-        void ShowTableResult()
-        {
-            foreach (Student student in students)
-            {
-                result += $"{student.Name.PadRight(4)}{student.Chinese.PadLeft(6)}{student.English.PadLeft(8)}{student.Math.PadLeft(8)}{student.SumScore.PadLeft(8)}{student.AverageScore.PadLeft(8)}{student.MinSubjectScore.PadLeft(6)}{student.MaxSubjectScore.PadLeft(6)}\n";
-            }
-            labelScore.Text = result;
-        }
-
+        
         private void btnStatistics_Click(object sender, EventArgs e)
         {
             btnAddStudent.Enabled = false;
@@ -139,7 +106,7 @@ namespace StudentsGrade
             string average = "平均";
             string highScore = "最高分";
             string lowScore = "最低分";
-            subjectStatisticResult = $"{total.PadRight(4)}{sumChinese.PadLeft(5)}{sumEnglish.PadLeft(8)}{sumMath.PadLeft(8)}\n{average.PadRight(4)}{averageChinese.PadLeft(5)}{averageEnglish.PadLeft(8)}{averageMath.PadLeft(8)}\n{highScore.PadRight(2)}{highChinese.PadLeft(5)}{highEnglish.PadLeft(8)}{highMath.PadLeft(8)}\n{lowScore.PadRight(2)}{lowChinese.PadLeft(5)}{lowEnglish.PadLeft(8)}{lowMath.PadLeft(8)}";
+            subjectStatisticResult = $"{total.PadRight(9)}{sumChinese.PadLeft(5)}{sumEnglish.PadLeft(7)}{sumMath.PadLeft(7)}\n{average.PadRight(9)}{averageChinese.PadLeft(5)}{averageEnglish.PadLeft(7)}{averageMath.PadLeft(7)}\n{highScore.PadRight(8)}{highChinese.PadLeft(5)}{highEnglish.PadLeft(7)}{highMath.PadLeft(7)}\n{lowScore.PadRight(8)}{lowChinese.PadLeft(5)}{lowEnglish.PadLeft(7)}{lowMath.PadLeft(7)}";
             labelStatistics.Text = subjectStatisticResult;
         }
 
@@ -158,7 +125,7 @@ namespace StudentsGrade
             
         }
     }
-    public class Student
+    public struct Student
     {
         public string Name, Chinese, English, Math, SumScore, AverageScore, MinSubjectScore, MaxSubjectScore;
         public Student(string name, string chinese, string english, string math, string sumScore, string averageScore, string minSubjectScore, string maxSubjectScore)

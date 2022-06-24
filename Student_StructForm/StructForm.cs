@@ -25,6 +25,7 @@ namespace Student_StructForm
             student.ChineseScore = Convert.ToInt32(textBoxChinese.Text);
             student.EnglishScore = Convert.ToInt32(textBoxEnglish.Text);
             student.MathScore = Convert.ToInt32(textBoxMath.Text);
+            
         }
 
         private void btnShowContent_Click(object sender, EventArgs e)
@@ -38,8 +39,10 @@ namespace Student_StructForm
         {
             int[] score = { student.ChineseScore, student.EnglishScore, student.MathScore };
             string[] subject = { "國文", "英文", "數學" };
-            int maxScoreIndex = score.ToList().IndexOf(score.Max());
-            int minScoreIndex = score.ToList().IndexOf(score.Min());
+            //int maxScoreIndex = score.ToList().IndexOf(score.Max());
+            //int minScoreIndex = score.ToList().IndexOf(score.Min());
+            int maxScoreIndex = Array.IndexOf(score, score.Max());
+            int minScoreIndex = Array.IndexOf(score, score.Min());
             labelMaxMinScore.Text = $"最高科目成績為: {subject[maxScoreIndex]}{score.Max()}分\n最低科目成績為: {subject[minScoreIndex]}{score.Min()}分";
         }
     }

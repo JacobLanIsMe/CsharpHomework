@@ -33,7 +33,7 @@ namespace StudentGrade_List
             this.labelScore = new System.Windows.Forms.Label();
             this.labelTitle = new System.Windows.Forms.Label();
             this.labelStatistics = new System.Windows.Forms.Label();
-            this.btnRandom20Student = new System.Windows.Forms.Button();
+            this.btnSerchChineseRange = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnInsertStudent = new System.Windows.Forms.Button();
@@ -50,6 +50,7 @@ namespace StudentGrade_List
             this.textBoxChineseSerchMin = new System.Windows.Forms.TextBox();
             this.textBoxChineseSerchMax = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnSubjectScoreStatistic = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -95,7 +96,7 @@ namespace StudentGrade_List
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(502, 27);
             this.labelTitle.TabIndex = 9;
-            this.labelTitle.Text = "姓名    國文   英文   數學   總分   平均    最低    最高";
+            this.labelTitle.Text = "姓名       國文   英文   數學   總分   平均    最低    最高";
             // 
             // labelStatistics
             // 
@@ -107,16 +108,17 @@ namespace StudentGrade_List
             this.labelStatistics.TabIndex = 2;
             this.labelStatistics.Text = "      ";
             // 
-            // btnRandom20Student
+            // btnSerchChineseRange
             // 
-            this.btnRandom20Student.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRandom20Student.Location = new System.Drawing.Point(57, 396);
-            this.btnRandom20Student.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.btnRandom20Student.Name = "btnRandom20Student";
-            this.btnRandom20Student.Size = new System.Drawing.Size(163, 32);
-            this.btnRandom20Student.TabIndex = 34;
-            this.btnRandom20Student.Text = "SERCH";
-            this.btnRandom20Student.UseVisualStyleBackColor = true;
+            this.btnSerchChineseRange.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSerchChineseRange.Location = new System.Drawing.Point(57, 396);
+            this.btnSerchChineseRange.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.btnSerchChineseRange.Name = "btnSerchChineseRange";
+            this.btnSerchChineseRange.Size = new System.Drawing.Size(163, 32);
+            this.btnSerchChineseRange.TabIndex = 34;
+            this.btnSerchChineseRange.Text = "SERCH";
+            this.btnSerchChineseRange.UseVisualStyleBackColor = true;
+            this.btnSerchChineseRange.Click += new System.EventHandler(this.btnSerchChineseRange_Click);
             // 
             // btnReset
             // 
@@ -128,6 +130,7 @@ namespace StudentGrade_List
             this.btnReset.TabIndex = 33;
             this.btnReset.Text = "清除所有資料";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnRemove
             // 
@@ -140,6 +143,7 @@ namespace StudentGrade_List
             this.btnRemove.TabIndex = 32;
             this.btnRemove.Text = "移除資料";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnInsertStudent
             // 
@@ -151,6 +155,7 @@ namespace StudentGrade_List
             this.btnInsertStudent.TabIndex = 31;
             this.btnInsertStudent.Text = "插入儲存資料";
             this.btnInsertStudent.UseVisualStyleBackColor = true;
+            this.btnInsertStudent.Click += new System.EventHandler(this.btnInsertStudent_Click);
             // 
             // btnAddStudent
             // 
@@ -272,13 +277,27 @@ namespace StudentGrade_List
             this.label6.TabIndex = 39;
             this.label6.Text = "-";
             // 
+            // btnSubjectScoreStatistic
+            // 
+            this.btnSubjectScoreStatistic.Enabled = false;
+            this.btnSubjectScoreStatistic.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnSubjectScoreStatistic.Location = new System.Drawing.Point(583, 396);
+            this.btnSubjectScoreStatistic.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.btnSubjectScoreStatistic.Name = "btnSubjectScoreStatistic";
+            this.btnSubjectScoreStatistic.Size = new System.Drawing.Size(163, 32);
+            this.btnSubjectScoreStatistic.TabIndex = 40;
+            this.btnSubjectScoreStatistic.Text = "各科統計";
+            this.btnSubjectScoreStatistic.UseVisualStyleBackColor = true;
+            this.btnSubjectScoreStatistic.Click += new System.EventHandler(this.btnSubjectScoreStatistic_Click);
+            // 
             // StudentGradeList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSubjectScoreStatistic);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.btnRandom20Student);
+            this.Controls.Add(this.btnSerchChineseRange);
             this.Controls.Add(this.textBoxChineseSerchMax);
             this.Controls.Add(this.textBoxChineseSerchMin);
             this.Controls.Add(this.label5);
@@ -314,7 +333,7 @@ namespace StudentGrade_List
         private System.Windows.Forms.Label labelScore;
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Label labelStatistics;
-        private System.Windows.Forms.Button btnRandom20Student;
+        private System.Windows.Forms.Button btnSerchChineseRange;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnInsertStudent;
@@ -331,6 +350,7 @@ namespace StudentGrade_List
         private System.Windows.Forms.TextBox textBoxChineseSerchMin;
         private System.Windows.Forms.TextBox textBoxChineseSerchMax;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnSubjectScoreStatistic;
     }
 }
 
