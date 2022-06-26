@@ -44,6 +44,7 @@ namespace CsharpHomework
             this.toolStripButtonXOGame = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonScreenSaver = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonGuess = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonAlarm = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,7 +72,8 @@ namespace CsharpHomework
             this.toolStripButtonForDoWhile,
             this.toolStripButtonXOGame,
             this.toolStripButtonScreenSaver,
-            this.toolStripButtonGuess});
+            this.toolStripButtonGuess,
+            this.toolStripButtonAlarm});
             this.toolStrip1.Location = new System.Drawing.Point(0, 31);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(185, 419);
@@ -210,6 +212,17 @@ namespace CsharpHomework
             this.toolStripButtonGuess.Text = "Guess";
             this.toolStripButtonGuess.Click += new System.EventHandler(this.toolStripButtonGuess_Click);
             // 
+            // toolStripButtonAlarm
+            // 
+            this.toolStripButtonAlarm.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonAlarm.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButtonAlarm.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonAlarm.Image")));
+            this.toolStripButtonAlarm.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonAlarm.Name = "toolStripButtonAlarm";
+            this.toolStripButtonAlarm.Size = new System.Drawing.Size(182, 26);
+            this.toolStripButtonAlarm.Text = "Alarm";
+            this.toolStripButtonAlarm.Click += new System.EventHandler(this.toolStripButtonAlarm_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -245,6 +258,7 @@ namespace CsharpHomework
         private System.Windows.Forms.ToolStripButton toolStripButtonXOGame;
         private System.Windows.Forms.ToolStripButton toolStripButtonScreenSaver;
         private System.Windows.Forms.ToolStripButton toolStripButtonGuess;
+        private System.Windows.Forms.ToolStripButton toolStripButtonAlarm;
     }
 }
 

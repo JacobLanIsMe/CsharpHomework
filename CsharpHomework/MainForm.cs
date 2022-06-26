@@ -19,6 +19,7 @@ using ForDoWhile;
 using XOGame;
 using ScreenSaver;
 using GuessNumber;
+using Alarm;
 
 namespace CsharpHomework
 {
@@ -122,12 +123,6 @@ namespace CsharpHomework
         {
             if (ActiveMdiChild != null) ActiveMdiChild.Close();
             ScreenSaverForm screenSaverForm = new ScreenSaverForm();
-            //screenSaverForm.MdiParent = this;
-            //screenSaverForm.StartPosition = FormStartPosition.CenterScreen;
-            //screenSaverForm.Location = new Point(0, 0);
-            //this.FormBorderStyle = FormBorderStyle.None;
-            //screenSaverForm.TopMost = true;
-            //toolStrip1.Visible = false;
             screenSaverForm.Show();
         }
 
@@ -138,6 +133,15 @@ namespace CsharpHomework
             guessNumberForm.MdiParent = this;
             guessNumberForm.StartPosition = FormStartPosition.CenterScreen;
             guessNumberForm.Show();
+        }
+
+        private void toolStripButtonAlarm_Click(object sender, EventArgs e)
+        {
+            if (ActiveMdiChild != null) ActiveMdiChild.Close();
+            AlarmForm alarmForm = new AlarmForm();
+            alarmForm.MdiParent = this;
+            alarmForm.StartPosition = FormStartPosition.CenterScreen;
+            alarmForm.Show();
         }
     }
 }
