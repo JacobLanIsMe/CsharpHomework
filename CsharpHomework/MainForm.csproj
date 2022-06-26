@@ -46,14 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +78,60 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Alarm\Alarm.csproj">
+      <Project>{74f41931-a38d-4350-81d3-ee3050880a3d}</Project>
+      <Name>Alarm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Calculator\Calculator.csproj">
+      <Project>{c18ce2a4-2581-4273-8378-3844f82bd9f3}</Project>
+      <Name>Calculator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForDoWhile\ForDoWhile.csproj">
+      <Project>{99286501-10a2-4848-97d3-72e8ec676f5d}</Project>
+      <Name>ForDoWhile</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GuessNumber\GuessNumber.csproj">
+      <Project>{b05444d5-9008-4624-b377-394c992e1205}</Project>
+      <Name>GuessNumber</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hello\Hello.csproj">
+      <Project>{0a0272bc-3e03-4bda-b877-97b18dc96445}</Project>
+      <Name>Hello</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LoanForm\LoanForm.csproj">
+      <Project>{7a15c03c-faad-42e2-849d-7fea77b7d283}</Project>
+      <Name>LoanForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Method\Method.csproj">
+      <Project>{b9e274b6-5532-44c3-a314-69af20f7492c}</Project>
+      <Name>Method</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POS\POS.csproj">
+      <Project>{dc348386-36fb-407a-ae79-78b3be0bf897}</Project>
+      <Name>POS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScreenSaver\ScreenSaver.csproj">
+      <Project>{59d4f907-516a-48bb-bc98-6eb79f804d0c}</Project>
+      <Name>ScreenSaver</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudentGrade_List\StudentGrade_List.csproj">
+      <Project>{63169e1e-ea74-408c-b195-8a801fb02dc9}</Project>
+      <Name>StudentGrade_List</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudentsGrade\StudentsGrade.csproj">
+      <Project>{c939cf23-6e56-42d0-b3ef-3922843623f6}</Project>
+      <Name>StudentsGrade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Student_StructForm\Student_StructForm.csproj">
+      <Project>{da0241fe-6de0-425c-879b-7ff48f18eeb5}</Project>
+      <Name>Student_StructForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XOGame\XOGame.csproj">
+      <Project>{9829d29e-7a49-4cc0-a9dc-79f67454fc8f}</Project>
+      <Name>XOGame</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

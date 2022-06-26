@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpHomework", "CsharpHomework\CsharpHomework.csproj", "{3100636C-C060-4236-9C7B-696D4B4D885F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainForm", "CsharpHomework\MainForm.csproj", "{3100636C-C060-4236-9C7B-696D4B4D885F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS", "POS\POS.csproj", "{DC348386-36FB-407A-AE79-78B3BE0BF897}"
 EndProject
@@ -28,6 +28,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessNumber", "GuessNumber\GuessNumber.csproj", "{B05444D5-9008-4624-B377-394C992E1205}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenSaver", "ScreenSaver\ScreenSaver.csproj", "{59D4F907-516A-48BB-BC98-6EB79F804D0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alarm", "Alarm\Alarm.csproj", "{74F41931-A38D-4350-81D3-EE3050880A3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{59D4F907-516A-48BB-BC98-6EB79F804D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59D4F907-516A-48BB-BC98-6EB79F804D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59D4F907-516A-48BB-BC98-6EB79F804D0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74F41931-A38D-4350-81D3-EE3050880A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74F41931-A38D-4350-81D3-EE3050880A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74F41931-A38D-4350-81D3-EE3050880A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74F41931-A38D-4350-81D3-EE3050880A3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

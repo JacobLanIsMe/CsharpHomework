@@ -21,41 +21,6 @@ namespace XOGame
                                            {"7 ", "8 ", "9 " } };
         bool change = true;
         
-        private void IsWin()
-        {
-            if ((arr[0,0] == arr[0,1] && arr[0,1] == arr[0,2]) ||
-                (arr[1,0] == arr[1,1] && arr[1,1] == arr[1,2]) ||
-                (arr[2,0] == arr[2,1] && arr[2,1] == arr[2,2]) ||
-                (arr[0,0] == arr[1,0] && arr[1,0] == arr[2,0]) ||
-                (arr[0,1] == arr[1,1] && arr[1,1] == arr[2,1]) ||
-                (arr[0,2] == arr[1,2] && arr[1,2] == arr[2,2]) ||
-                (arr[0,0] == arr[1,1] && arr[1,1] == arr[2,2]) ||
-                (arr[2,0] == arr[1,1] && arr[1,1] == arr[0,2]))
-            {
-                if (change) MessageBox.Show($"X 手獲勝", "完局!", MessageBoxButtons.OK);
-                else MessageBox.Show($"O 手獲勝", "完局!", MessageBoxButtons.OK);
-                AllClear();
-            }
-            
-        }
-        private void AllClear()
-        {
-            int count = 1;
-            for (int i = 0; i < 3; i++)
-            {
-                for (int j = 0; j < 3; j++)
-                {
-                    arr[i, j] = count + " ";
-                    count++;
-                }
-            }
-            Button[] buttons = { btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9 };
-            foreach (Button i in buttons)
-            {
-                i.Text = "";
-            }
-            change = true;
-        }
         private void ClickBtn(int i, int j, Button k)
         {
             if (change)
@@ -123,7 +88,42 @@ namespace XOGame
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
+        }
+        private void IsWin()
+        {
+            if ((arr[0, 0] == arr[0, 1] && arr[0, 1] == arr[0, 2]) ||
+                (arr[1, 0] == arr[1, 1] && arr[1, 1] == arr[1, 2]) ||
+                (arr[2, 0] == arr[2, 1] && arr[2, 1] == arr[2, 2]) ||
+                (arr[0, 0] == arr[1, 0] && arr[1, 0] == arr[2, 0]) ||
+                (arr[0, 1] == arr[1, 1] && arr[1, 1] == arr[2, 1]) ||
+                (arr[0, 2] == arr[1, 2] && arr[1, 2] == arr[2, 2]) ||
+                (arr[0, 0] == arr[1, 1] && arr[1, 1] == arr[2, 2]) ||
+                (arr[2, 0] == arr[1, 1] && arr[1, 1] == arr[0, 2]))
+            {
+                if (change) MessageBox.Show($"X 手獲勝", "完局!", MessageBoxButtons.OK);
+                else MessageBox.Show($"O 手獲勝", "完局!", MessageBoxButtons.OK);
+                AllClear();
+            }
+
+        }
+        private void AllClear()
+        {
+            int count = 1;
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    arr[i, j] = count + " ";
+                    count++;
+                }
+            }
+            Button[] buttons = { btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9 };
+            foreach (Button i in buttons)
+            {
+                i.Text = "";
+            }
+            change = true;
         }
     }
 }

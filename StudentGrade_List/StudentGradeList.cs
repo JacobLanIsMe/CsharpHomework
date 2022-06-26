@@ -54,17 +54,17 @@ namespace StudentGrade_List
         {
             students.RemoveAt(0);
             ShowScore(students);
-            if (students.Count == 0)
+            if (students.Count != 0)
+            {
+                if (labelStatistics.Text != "") btnSubjectScoreStatistic_Click(sender, e);
+            }
+            else
             {
                 btnRemove.Enabled = false;
                 labelScore.BorderStyle = BorderStyle.None;
                 labelStatistics.Text = "";
                 clickBtnSubjectScoreStatisticCount = 0;
                 btnSubjectScoreStatistic.Enabled = false;
-            }
-            else
-            {
-                btnSubjectScoreStatistic_Click(sender, e);
             }
         }
 

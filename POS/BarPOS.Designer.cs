@@ -65,17 +65,17 @@ namespace POS
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(5, 73);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(183, 342);
+            this.panel1.Size = new System.Drawing.Size(210, 342);
             this.panel1.TabIndex = 0;
             // 
             // btnWine
             // 
             this.btnWine.BackColor = System.Drawing.Color.White;
             this.btnWine.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnWine.Location = new System.Drawing.Point(92, 178);
+            this.btnWine.Location = new System.Drawing.Point(104, 178);
             this.btnWine.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnWine.Name = "btnWine";
-            this.btnWine.Size = new System.Drawing.Size(84, 125);
+            this.btnWine.Size = new System.Drawing.Size(102, 125);
             this.btnWine.TabIndex = 4;
             this.btnWine.Text = "紅酒\n\nWine\n\nNT$320";
             this.btnWine.UseVisualStyleBackColor = false;
@@ -85,10 +85,10 @@ namespace POS
             // 
             this.btnWhisky.BackColor = System.Drawing.Color.White;
             this.btnWhisky.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnWhisky.Location = new System.Drawing.Point(4, 178);
+            this.btnWhisky.Location = new System.Drawing.Point(2, 178);
             this.btnWhisky.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnWhisky.Name = "btnWhisky";
-            this.btnWhisky.Size = new System.Drawing.Size(84, 125);
+            this.btnWhisky.Size = new System.Drawing.Size(102, 125);
             this.btnWhisky.TabIndex = 3;
             this.btnWhisky.Text = "威士忌\n\nWhisky\n\nNT$350";
             this.btnWhisky.UseVisualStyleBackColor = false;
@@ -98,10 +98,10 @@ namespace POS
             // 
             this.btnTequila.BackColor = System.Drawing.Color.White;
             this.btnTequila.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnTequila.Location = new System.Drawing.Point(92, 42);
+            this.btnTequila.Location = new System.Drawing.Point(104, 42);
             this.btnTequila.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnTequila.Name = "btnTequila";
-            this.btnTequila.Size = new System.Drawing.Size(84, 125);
+            this.btnTequila.Size = new System.Drawing.Size(102, 125);
             this.btnTequila.TabIndex = 2;
             this.btnTequila.Text = "龍舌蘭\n\nTequila\n\nNT$180";
             this.btnTequila.UseVisualStyleBackColor = false;
@@ -111,10 +111,10 @@ namespace POS
             // 
             this.btnBeer.BackColor = System.Drawing.Color.White;
             this.btnBeer.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnBeer.Location = new System.Drawing.Point(4, 42);
+            this.btnBeer.Location = new System.Drawing.Point(2, 42);
             this.btnBeer.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnBeer.Name = "btnBeer";
-            this.btnBeer.Size = new System.Drawing.Size(84, 125);
+            this.btnBeer.Size = new System.Drawing.Size(102, 125);
             this.btnBeer.TabIndex = 1;
             this.btnBeer.Text = "啤酒\n\nBeer\n\nNT$120";
             this.btnBeer.UseVisualStyleBackColor = false;
@@ -136,7 +136,7 @@ namespace POS
             this.panel3.Controls.Add(this.textBoxTotalPrice);
             this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.label14);
-            this.panel3.Location = new System.Drawing.Point(193, 73);
+            this.panel3.Location = new System.Drawing.Point(219, 73);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(176, 98);
             this.panel3.TabIndex = 1;
@@ -182,7 +182,7 @@ namespace POS
             this.panel7.Controls.Add(this.btnCreditCard);
             this.panel7.Controls.Add(this.btnCash);
             this.panel7.Controls.Add(this.label19);
-            this.panel7.Location = new System.Drawing.Point(193, 177);
+            this.panel7.Location = new System.Drawing.Point(219, 177);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(176, 98);
             this.panel7.TabIndex = 3;
@@ -237,7 +237,7 @@ namespace POS
             this.panel8.Controls.Add(this.listBox1);
             this.panel8.Controls.Add(this.label20);
             this.panel8.Controls.Add(this.label18);
-            this.panel8.Location = new System.Drawing.Point(373, 73);
+            this.panel8.Location = new System.Drawing.Point(399, 73);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(273, 342);
             this.panel8.TabIndex = 4;
@@ -289,7 +289,7 @@ namespace POS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1194, 921);
+            this.ClientSize = new System.Drawing.Size(753, 479);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel3);

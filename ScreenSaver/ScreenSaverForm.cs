@@ -25,7 +25,8 @@ namespace ScreenSaver
         int startMousePositionY;
         private void ScreenSaverForm_Load(object sender, EventArgs e)
         {
-            timer1.Start();
+            //timer1.Start();
+            timer1.Enabled = true;
             Random random = new Random();
             Rectangle workArea = Screen.GetWorkingArea(this);
             screenX = workArea.Width;
@@ -38,7 +39,7 @@ namespace ScreenSaver
         }
         private void ScreenSaverForm_KeyDown(object sender, KeyEventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
         int i = 0;
         private void timer1_Tick_1(object sender, EventArgs e)
@@ -57,7 +58,7 @@ namespace ScreenSaver
             Point mousePosition = MousePosition;
             if (mousePosition.X != startMousePositionX || mousePosition.Y != startMousePositionY)
             {
-                Application.Exit();
+                this.Close();
             }
         }
 

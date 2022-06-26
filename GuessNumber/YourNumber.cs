@@ -22,10 +22,12 @@ namespace GuessNumber
         {
             int yourNumber;
             bool isCorrectNumberFormat = int.TryParse(textBoxYourNumber.Text, out yourNumber);
+
             if (isCorrectNumberFormat && yourNumber > yourNumberMin && yourNumber < yourNumberMax)
             {
-                GuessNumberForm guessNumberForm = (GuessNumberForm) this.Owner;
-             
+                //GuessNumberForm guessNumberForm = (GuessNumberForm)this.Owner;
+                GuessNumberForm guessNumberForm = (GuessNumberForm)this.Owner;
+
                 if (yourNumber > guessNumberForm.answer)
                 {
                     yourNumberMax = yourNumber;
