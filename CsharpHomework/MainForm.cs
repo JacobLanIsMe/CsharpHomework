@@ -18,6 +18,7 @@ using Calculator;
 using ForDoWhile;
 using XOGame;
 using ScreenSaver;
+using Notepad;
 using GuessNumber;
 using Alarm;
 
@@ -143,5 +144,16 @@ namespace CsharpHomework
             alarmForm.StartPosition = FormStartPosition.CenterScreen;
             alarmForm.Show();
         }
+
+        private void toolStripButtonNotepad_Click(object sender, EventArgs e)
+        {
+            if (ActiveMdiChild != null) ActiveMdiChild.Close();
+            NotepadForm notepadForm = new NotepadForm();
+            notepadForm.MdiParent = this;
+            notepadForm.StartPosition = FormStartPosition.CenterScreen;
+            notepadForm.Show();
+        }
+
+        
     }
 }

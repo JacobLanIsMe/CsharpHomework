@@ -43,6 +43,7 @@ namespace CsharpHomework
             this.toolStripButtonForDoWhile = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonXOGame = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonScreenSaver = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonNotepad = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonGuess = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonAlarm = new System.Windows.Forms.ToolStripButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -73,6 +74,7 @@ namespace CsharpHomework
             this.toolStripButtonForDoWhile,
             this.toolStripButtonXOGame,
             this.toolStripButtonScreenSaver,
+            this.toolStripButtonNotepad,
             this.toolStripButtonGuess,
             this.toolStripButtonAlarm});
             this.toolStrip1.Location = new System.Drawing.Point(0, 98);
@@ -202,6 +204,17 @@ namespace CsharpHomework
             this.toolStripButtonScreenSaver.Text = "Screen Saver";
             this.toolStripButtonScreenSaver.Click += new System.EventHandler(this.toolStripButtonScreenSaver_Click);
             // 
+            // toolStripButtonNotepad
+            // 
+            this.toolStripButtonNotepad.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonNotepad.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButtonNotepad.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonNotepad.Image")));
+            this.toolStripButtonNotepad.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonNotepad.Name = "toolStripButtonNotepad";
+            this.toolStripButtonNotepad.Size = new System.Drawing.Size(182, 26);
+            this.toolStripButtonNotepad.Text = "Notepad";
+            this.toolStripButtonNotepad.Click += new System.EventHandler(this.toolStripButtonNotepad_Click);
+            // 
             // toolStripButtonGuess
             // 
             this.toolStripButtonGuess.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
@@ -238,6 +251,7 @@ namespace CsharpHomework
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(985, 618);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.toolStrip1);
@@ -272,6 +286,7 @@ namespace CsharpHomework
         private System.Windows.Forms.ToolStripButton toolStripButtonGuess;
         private System.Windows.Forms.ToolStripButton toolStripButtonAlarm;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripButton toolStripButtonNotepad;
     }
 }
 

@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenSaver", "ScreenSaver\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alarm", "Alarm\Alarm.csproj", "{74F41931-A38D-4350-81D3-EE3050880A3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notepad", "Notepad\Notepad.csproj", "{82422219-FA62-4678-811A-11D6A39CA4AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{74F41931-A38D-4350-81D3-EE3050880A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74F41931-A38D-4350-81D3-EE3050880A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74F41931-A38D-4350-81D3-EE3050880A3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82422219-FA62-4678-811A-11D6A39CA4AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82422219-FA62-4678-811A-11D6A39CA4AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82422219-FA62-4678-811A-11D6A39CA4AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82422219-FA62-4678-811A-11D6A39CA4AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
