@@ -19,12 +19,13 @@ namespace GuessNumber
         public int answer;
         private void btnGuess_Click(object sender, EventArgs e)
         {
-            YourNumber yournumberform = new YourNumber();
+            
             Random random = new Random();
             answer = random.Next(1, 100);
-            //yournumberform.ShowDialog(this);
-            yournumberform.Show(this);
+            YourNumber yournumberform = new YourNumber(answer);
+            yournumberform.Show();
         }
+        
 
         public string GetLabelConditionText
         {

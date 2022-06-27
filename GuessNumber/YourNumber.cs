@@ -16,8 +16,16 @@ namespace GuessNumber
         {
             InitializeComponent();
         }
+        public YourNumber(int answer)
+        {
+            InitializeComponent();
+            answerYourNumber = answer;
+        }
+        public int answerYourNumber;
         int yourNumberMax = 100;
         int yourNumberMin = 0;
+        
+
         private void btnEnter_Click(object sender, EventArgs e)
         {
             int yourNumber;
@@ -25,29 +33,33 @@ namespace GuessNumber
 
             if (isCorrectNumberFormat && yourNumber > yourNumberMin && yourNumber < yourNumberMax)
             {
-                //GuessNumberForm guessNumberForm = (GuessNumberForm)this.Owner;
-                GuessNumberForm guessNumberForm = (GuessNumberForm)this.Owner;
+                foreach (Form form in Application.OpenForms)
+                {
+                    if (form.GetType() == typeof(GuessNumberForm))
+                    {
+                        if (yourNumber > answerYourNumber)
+                        {
+                            yourNumberMax = yourNumber;
+                            ((GuessNumberForm)form).GetLabelConditionText = $"Too Large!!!\nBetween {yourNumberMin} and {yourNumberMax}";
+                            textBoxYourNumber.Focus();
+                            textBoxYourNumber.Select(0, textBoxYourNumber.Text.Length);
 
-                if (yourNumber > guessNumberForm.answer)
-                {
-                    yourNumberMax = yourNumber;
-                    guessNumberForm.GetLabelConditionText = $"Too Large!!!\nBetween {yourNumberMin} and {yourNumberMax}";
-                    textBoxYourNumber.Focus();
-                    textBoxYourNumber.Select(0, textBoxYourNumber.Text.Length);
-
-                }
-                else if (yourNumber < guessNumberForm.answer)
-                {
-                    yourNumberMin = yourNumber;
-                    guessNumberForm.GetLabelConditionText = $"Too Samll!!!\nBetween {yourNumberMin} and {yourNumberMax}";
-                    textBoxYourNumber.Focus();
-                    textBoxYourNumber.Select(0, textBoxYourNumber.Text.Length);
-                }
-                else
-                {
-                    MessageBox.Show($"Congradulations!!! You got {guessNumberForm.answer}!!!");
-                    this.Close();
-                    guessNumberForm.GetLabelConditionText = "Please Select A Number Between 0 to 100";
+                        }
+                        else if (yourNumber < answerYourNumber)
+                        {
+                            yourNumberMin = yourNumber;
+                            ((GuessNumberForm)form).GetLabelConditionText = $"Too Samll!!!\nBetween {yourNumberMin} and {yourNumberMax}";
+                            textBoxYourNumber.Focus();
+                            textBoxYourNumber.Select(0, textBoxYourNumber.Text.Length);
+                        }
+                        else
+                        {
+                            MessageBox.Show($"Congradulations!!! You got {answerYourNumber}!!!");
+                            ((GuessNumberForm)form).GetLabelConditionText = "Please Select A Number Between 0 to 100";
+                            this.Close();
+                            return;
+                        }
+                    }
                 }
             }
             else

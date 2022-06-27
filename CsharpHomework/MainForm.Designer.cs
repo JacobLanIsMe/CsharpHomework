@@ -45,6 +45,7 @@ namespace CsharpHomework
             this.toolStripButtonScreenSaver = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonGuess = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonAlarm = new System.Windows.Forms.ToolStripButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@ namespace CsharpHomework
             this.splitter1.Dock = System.Windows.Forms.DockStyle.Top;
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(800, 31);
+            this.splitter1.Size = new System.Drawing.Size(985, 98);
             this.splitter1.TabIndex = 1;
             this.splitter1.TabStop = false;
             // 
@@ -74,9 +75,9 @@ namespace CsharpHomework
             this.toolStripButtonScreenSaver,
             this.toolStripButtonGuess,
             this.toolStripButtonAlarm});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 31);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 98);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(185, 419);
+            this.toolStrip1.Size = new System.Drawing.Size(185, 520);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -223,17 +224,28 @@ namespace CsharpHomework
             this.toolStripButtonAlarm.Text = "Alarm";
             this.toolStripButtonAlarm.Click += new System.EventHandler(this.toolStripButtonAlarm_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(175, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 33);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "C#作業";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(985, 618);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.splitter1);
             this.IsMdiContainer = true;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Form1";
+            this.Text = "MainForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -259,6 +271,7 @@ namespace CsharpHomework
         private System.Windows.Forms.ToolStripButton toolStripButtonScreenSaver;
         private System.Windows.Forms.ToolStripButton toolStripButtonGuess;
         private System.Windows.Forms.ToolStripButton toolStripButtonAlarm;
+        private System.Windows.Forms.Label label1;
     }
 }
 
