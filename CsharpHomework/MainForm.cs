@@ -19,6 +19,7 @@ using ForDoWhile;
 using XOGame;
 using ScreenSaver;
 using Notepad;
+using PictureViewer;
 using GuessNumber;
 using Alarm;
 
@@ -154,6 +155,13 @@ namespace CsharpHomework
             notepadForm.Show();
         }
 
-        
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            if (ActiveMdiChild != null) ActiveMdiChild.Close();
+            PictureViewerForm pictureViewerForm = new PictureViewerForm();
+            pictureViewerForm.MdiParent = this;
+            pictureViewerForm.StartPosition = FormStartPosition.CenterScreen;
+            pictureViewerForm.Show();
+        }
     }
 }

@@ -90,7 +90,10 @@ namespace Calculator
             // 
             // textBoxAnswer
             // 
+            this.textBoxAnswer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxAnswer.Enabled = false;
             this.textBoxAnswer.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxAnswer.ForeColor = System.Drawing.Color.Black;
             this.textBoxAnswer.Location = new System.Drawing.Point(257, 212);
             this.textBoxAnswer.Name = "textBoxAnswer";
             this.textBoxAnswer.Size = new System.Drawing.Size(100, 29);

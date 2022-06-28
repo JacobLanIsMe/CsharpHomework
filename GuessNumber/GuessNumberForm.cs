@@ -23,7 +23,7 @@ namespace GuessNumber
             Random random = new Random();
             answer = random.Next(1, 100);
             YourNumber yournumberform = new YourNumber(answer);
-            yournumberform.Show();
+            yournumberform.ShowDialog();
         }
         
 

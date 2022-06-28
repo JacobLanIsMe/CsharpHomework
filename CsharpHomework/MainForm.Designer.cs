@@ -47,6 +47,7 @@ namespace CsharpHomework
             this.toolStripButtonGuess = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonAlarm = new System.Windows.Forms.ToolStripButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +76,7 @@ namespace CsharpHomework
             this.toolStripButtonXOGame,
             this.toolStripButtonScreenSaver,
             this.toolStripButtonNotepad,
+            this.toolStripButton1,
             this.toolStripButtonGuess,
             this.toolStripButtonAlarm});
             this.toolStrip1.Location = new System.Drawing.Point(0, 98);
@@ -247,6 +249,17 @@ namespace CsharpHomework
             this.label1.TabIndex = 4;
             this.label1.Text = "C#作業";
             // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(182, 26);
+            this.toolStripButton1.Text = "Picture Viewer";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -287,6 +300,7 @@ namespace CsharpHomework
         private System.Windows.Forms.ToolStripButton toolStripButtonAlarm;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripButton toolStripButtonNotepad;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }
 
