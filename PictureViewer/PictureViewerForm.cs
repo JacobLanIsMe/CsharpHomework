@@ -55,7 +55,7 @@ namespace PictureViewer
                 {
                     int pictureIndex = Convert.ToInt32(control.Name.Substring(10));
                     PictureViewerForm2 form2 = new PictureViewerForm2(allJPG[pictureIndex]);
-                    form2.ShowDialog();
+                    form2.Show();
                     return;
                 }
             }

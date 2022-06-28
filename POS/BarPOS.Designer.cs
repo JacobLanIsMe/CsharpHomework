@@ -84,6 +84,7 @@ namespace POS
             // btnWhisky
             // 
             this.btnWhisky.BackColor = System.Drawing.Color.White;
+            this.btnWhisky.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnWhisky.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnWhisky.Location = new System.Drawing.Point(2, 178);
             this.btnWhisky.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
@@ -97,6 +98,7 @@ namespace POS
             // btnTequila
             // 
             this.btnTequila.BackColor = System.Drawing.Color.White;
+            this.btnTequila.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnTequila.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnTequila.Location = new System.Drawing.Point(104, 42);
             this.btnTequila.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
@@ -110,7 +112,9 @@ namespace POS
             // btnBeer
             // 
             this.btnBeer.BackColor = System.Drawing.Color.White;
+            this.btnBeer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnBeer.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnBeer.ForeColor = System.Drawing.Color.Black;
             this.btnBeer.Location = new System.Drawing.Point(2, 42);
             this.btnBeer.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnBeer.Name = "btnBeer";

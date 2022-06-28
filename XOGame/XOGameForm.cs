@@ -25,13 +25,13 @@ namespace XOGame
         {
             if (change)
             {
-                arr[i, j] = "O";
-                k.Text = "O";
+                arr[i, j] = "⭕";
+                k.Text = "⭕";
             }
             else
             {
-                arr[i, j] = "X";
-                k.Text = "X";
+                arr[i, j] = "❌";
+                k.Text = "❌";
             }
             change = !change;
         }

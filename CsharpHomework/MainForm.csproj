@@ -88,6 +88,10 @@
       <Project>{c18ce2a4-2581-4273-8378-3844f82bd9f3}</Project>
       <Name>Calculator</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DrawPaint\DrawPaint.csproj">
+      <Project>{42a1b7fc-4e0a-483d-80c9-d2db589676dd}</Project>
+      <Name>DrawPaint</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ForDoWhile\ForDoWhile.csproj">
       <Project>{99286501-10a2-4848-97d3-72e8ec676f5d}</Project>
       <Name>ForDoWhile</Name>
