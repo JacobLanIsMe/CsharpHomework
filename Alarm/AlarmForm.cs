@@ -26,19 +26,17 @@ namespace Alarm
             maskedTextBox1.TypeValidationCompleted += new TypeValidationEventHandler(maskedTextBox1_TypeValidationCompleted);
         }
 
-        //bool isSetAlarm;
-        string alarmTime;
-
+        bool isSetAlarm;
         bool isAlarmTime;
         private void timer1_Tick(object sender, EventArgs e)
         {
             labelNowTime.Text = DateTime.Now.ToString("HH:mm:ss");
             if (DateTime.Now.ToString("HH時mm分ss秒") == maskedTextBox1.Text && checkBox1.Checked)
             {
-                alarmTime = DateTime.Now.ToString("HH時mm分ss秒");
+                isSetAlarm = true;
             }
 
-            if (alarmTime == maskedTextBox1.Text && checkBox1.Checked)
+            if (isSetAlarm && checkBox1.Checked)
             {
                 if (isAlarmTime) labelNowTime.ForeColor = Color.Red;
                 else labelNowTime.ForeColor = Color.Green;
@@ -57,7 +55,7 @@ namespace Alarm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            alarmTime = "";
+            isSetAlarm = false;
             labelNowTime.ForeColor = Color.Black;
         }
     }
