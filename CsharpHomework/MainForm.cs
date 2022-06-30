@@ -31,7 +31,7 @@ namespace CsharpHomework
     {
         public MainForm()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
         
         private void toolStripButtonHello_Click(object sender, EventArgs e)
