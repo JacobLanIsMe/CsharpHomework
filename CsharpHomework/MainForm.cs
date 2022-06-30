@@ -23,6 +23,7 @@ using DrawPaint;
 using PictureViewer;
 using GuessNumber;
 using Alarm;
+using System.IO;
 
 namespace CsharpHomework
 {
@@ -173,10 +174,26 @@ namespace CsharpHomework
             drawPaintForm.StartPosition = FormStartPosition.CenterScreen;
             drawPaintForm.Show();
         }
-
+        public string[] allJPG;
         private void MainForm_Load(object sender, EventArgs e)
         {
+            allJPG = Directory.GetFiles(@"../../../image", "*.jpg");
+            Random random = new Random();
+            int backImageIndex = random.Next(allJPG.Length);
+            this.BackgroundImage = new Bitmap(allJPG[backImageIndex]);
             pictureBox1.Width = this.Size.Width;
+            timer1.Enabled = true;
+        }
+        int timer = 0;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (timer % 60 == 0)
+            {
+                Random random = new Random();
+                int backImageIndex = random.Next(allJPG.Length);
+                this.BackgroundImage = new Bitmap(allJPG[backImageIndex]);
+            }
+            timer += 1;
         }
     }
 }

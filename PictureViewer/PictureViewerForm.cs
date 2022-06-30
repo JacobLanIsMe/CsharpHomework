@@ -22,7 +22,7 @@ namespace PictureViewer
         int imgY;
         private void PictureViewerForm_Load(object sender, EventArgs e)
         {
-            allJPG = Directory.GetFiles(@"../img", "*.jpg");
+            allJPG = Directory.GetFiles(@"../../../image", "*.jpg");
             imgX = 10;
             imgY = 10;
             for (int i = 0; i < allJPG.Length; i++)
@@ -54,7 +54,7 @@ namespace PictureViewer
                 if (control.GetType() == typeof(PictureBox) && control == sender)
                 {
                     int pictureIndex = Convert.ToInt32(control.Name.Substring(10));
-                    PictureViewerForm2 form2 = new PictureViewerForm2(allJPG[pictureIndex]);
+                    PictureViewerForm2 form2 = new PictureViewerForm2(allJPG, pictureIndex);
                     form2.Show();
                     return;
                 }

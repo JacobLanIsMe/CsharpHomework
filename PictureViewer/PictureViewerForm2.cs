@@ -16,17 +16,41 @@ namespace PictureViewer
         {
             InitializeComponent();
         }
-        public PictureViewerForm2(string imgPathFromForm1)
+        public PictureViewerForm2(string[] allJPGPath, int showIndex)
         {
             InitializeComponent();
-            imgPath = imgPathFromForm1;
+            showForm2Index = showIndex;
+            JPGPath = allJPGPath;
         }
-        string imgPath;
+        int showForm2Index;
+        string[] JPGPath;
 
         private void PictureViewerForm2_Load(object sender, EventArgs e)
         {
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.Image = new Bitmap(imgPath);
+            pictureBox1.Image = new Bitmap(JPGPath[showForm2Index]);
+        }
+
+        private void btnRight_Click(object sender, EventArgs e)
+        {
+            showForm2Index += 1;
+            pictureBox1.Image = new Bitmap(JPGPath[showForm2Index]);
+            btnLeft.Enabled = true;
+            if (showForm2Index == JPGPath.Length - 1)
+            {
+                btnRight.Enabled = false;
+            }
+        }
+
+        private void btnLeft_Click(object sender, EventArgs e)
+        {
+            showForm2Index -= 1;
+            pictureBox1.Image = new Bitmap(JPGPath[showForm2Index]);
+            btnRight.Enabled = true;
+            if (showForm2Index == 0)
+            {
+                btnLeft.Enabled = false;
+            }
         }
     }
 }
