@@ -34,12 +34,12 @@ namespace Calculator
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxNum1 = new System.Windows.Forms.TextBox();
             this.textBoxNum2 = new System.Windows.Forms.TextBox();
-            this.textBoxAnswer = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnPlus = new System.Windows.Forms.Button();
             this.btnMinus = new System.Windows.Forms.Button();
             this.btnMultiply = new System.Windows.Forms.Button();
             this.btnDivide = new System.Windows.Forms.Button();
+            this.labelAnswer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -87,17 +87,6 @@ namespace Calculator
             this.textBoxNum2.Name = "textBoxNum2";
             this.textBoxNum2.Size = new System.Drawing.Size(100, 29);
             this.textBoxNum2.TabIndex = 4;
-            // 
-            // textBoxAnswer
-            // 
-            this.textBoxAnswer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxAnswer.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxAnswer.ForeColor = System.Drawing.Color.Black;
-            this.textBoxAnswer.Location = new System.Drawing.Point(257, 212);
-            this.textBoxAnswer.Name = "textBoxAnswer";
-            this.textBoxAnswer.ReadOnly = true;
-            this.textBoxAnswer.Size = new System.Drawing.Size(100, 29);
-            this.textBoxAnswer.TabIndex = 5;
             // 
             // label4
             // 
@@ -153,17 +142,28 @@ namespace Calculator
             this.btnDivide.UseVisualStyleBackColor = true;
             this.btnDivide.Click += new System.EventHandler(this.btnDivide_Click);
             // 
+            // labelAnswer
+            // 
+            this.labelAnswer.BackColor = System.Drawing.Color.White;
+            this.labelAnswer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelAnswer.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAnswer.Location = new System.Drawing.Point(257, 212);
+            this.labelAnswer.Name = "labelAnswer";
+            this.labelAnswer.Size = new System.Drawing.Size(100, 29);
+            this.labelAnswer.TabIndex = 11;
+            
+            // 
             // CalculatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelAnswer);
             this.Controls.Add(this.btnDivide);
             this.Controls.Add(this.btnMultiply);
             this.Controls.Add(this.btnMinus);
             this.Controls.Add(this.btnPlus);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBoxAnswer);
             this.Controls.Add(this.textBoxNum2);
             this.Controls.Add(this.textBoxNum1);
             this.Controls.Add(this.label3);
@@ -183,12 +183,12 @@ namespace Calculator
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxNum1;
         private System.Windows.Forms.TextBox textBoxNum2;
-        private System.Windows.Forms.TextBox textBoxAnswer;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnPlus;
         private System.Windows.Forms.Button btnMinus;
         private System.Windows.Forms.Button btnMultiply;
         private System.Windows.Forms.Button btnDivide;
+        private System.Windows.Forms.Label labelAnswer;
     }
 }
 

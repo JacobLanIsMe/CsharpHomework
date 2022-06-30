@@ -85,6 +85,7 @@ namespace PictureViewer
             this.Name = "PictureViewerForm2";
             this.Text = "PictureViewerForm2";
             this.Load += new System.EventHandler(this.PictureViewerForm2_Load);
+            
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

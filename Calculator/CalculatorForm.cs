@@ -26,7 +26,7 @@ namespace Calculator
         {
             if (double.TryParse(textBoxNum1.Text, out double num1) && double.TryParse(textBoxNum2.Text, out double num2))
             {
-                textBoxAnswer.Text = (num1 + num2).ToString();
+                labelAnswer.Text = (num1 + num2).ToString();
             }
             else
             {
@@ -39,7 +39,7 @@ namespace Calculator
         {
             if (double.TryParse(textBoxNum1.Text, out double num1) && double.TryParse(textBoxNum2.Text, out double num2))
             {
-                textBoxAnswer.Text = (num1 - num2).ToString();
+                labelAnswer.Text = (num1 - num2).ToString();
             }
             else
             {
@@ -51,7 +51,7 @@ namespace Calculator
         {
             if (double.TryParse(textBoxNum1.Text, out double num1) && double.TryParse(textBoxNum2.Text, out double num2))
             {
-                textBoxAnswer.Text = (num1 * num2).ToString();
+                labelAnswer.Text = (num1 * num2).ToString();
             }
             else
             {
@@ -63,12 +63,14 @@ namespace Calculator
         {
             if (double.TryParse(textBoxNum1.Text, out double num1) && double.TryParse(textBoxNum2.Text, out double num2))
             {
-                textBoxAnswer.Text = (num1 / num2).ToString();
+                labelAnswer.Text = (num1 / num2).ToString();
             }
             else
             {
                 MessageBox.Show("請輸入正確的數字格式!");
             }
         }
+
+        
     }
 }

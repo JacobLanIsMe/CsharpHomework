@@ -75,7 +75,7 @@ namespace Notepad
             this.labelTime = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStrip = new System.Windows.Forms.ToolStripButton();
+            this.toolStripNew = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonOpen = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonSave = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
@@ -124,6 +124,7 @@ namespace Notepad
             this.新增NCtrlNToolStripMenuItem.Name = "新增NCtrlNToolStripMenuItem";
             this.新增NCtrlNToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.新增NCtrlNToolStripMenuItem.Text = "新增(N)                Ctrl+N";
+            this.新增NCtrlNToolStripMenuItem.Click += new System.EventHandler(this.新增NCtrlNToolStripMenuItem_Click);
             // 
             // 開啟OCtrlOToolStripMenuItem
             // 
@@ -417,7 +418,7 @@ namespace Notepad
             // 
             this.toolStrip1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStrip,
+            this.toolStripNew,
             this.toolStripButtonOpen,
             this.toolStripButtonSave,
             this.toolStripButton3,
@@ -433,14 +434,15 @@ namespace Notepad
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStrip
+            // toolStripNew
             // 
-            this.toolStrip.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStrip.Image = ((System.Drawing.Image)(resources.GetObject("toolStrip.Image")));
-            this.toolStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(23, 22);
-            this.toolStrip.Text = "新增(N)";
+            this.toolStripNew.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripNew.Image = ((System.Drawing.Image)(resources.GetObject("toolStripNew.Image")));
+            this.toolStripNew.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripNew.Name = "toolStripNew";
+            this.toolStripNew.Size = new System.Drawing.Size(23, 22);
+            this.toolStripNew.Text = "新增(N)";
+            this.toolStripNew.Click += new System.EventHandler(this.toolStripNew_Click);
             // 
             // toolStripButtonOpen
             // 
@@ -589,7 +591,7 @@ namespace Notepad
         private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStrip;
+        private System.Windows.Forms.ToolStripButton toolStripNew;
         private System.Windows.Forms.ToolStripButton toolStripButtonOpen;
         private System.Windows.Forms.ToolStripButton toolStripButtonSave;
         private System.Windows.Forms.ToolStripButton toolStripButton3;

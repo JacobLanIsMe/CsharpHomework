@@ -274,12 +274,12 @@ namespace CsharpHomework
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Silver;
-            this.label1.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("標楷體", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(175, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 34);
+            this.label1.Size = new System.Drawing.Size(263, 29);
             this.label1.TabIndex = 4;
-            this.label1.Text = "C#作業";
+            this.label1.Text = "藍紹瑋的 C# 作業";
             // 
             // pictureBox1
             // 

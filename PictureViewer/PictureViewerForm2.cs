@@ -52,5 +52,7 @@ namespace PictureViewer
                 btnLeft.Enabled = false;
             }
         }
+
+        
     }
 }

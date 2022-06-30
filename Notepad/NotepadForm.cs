@@ -29,6 +29,7 @@ namespace Notepad
             fileName = dialog.FileName;
             StreamReader sr = new StreamReader(dialog.FileName);
             textBox1.Text = sr.ReadToEnd();
+            sr.Close();
         }
 
         private void 結束XToolStripMenuItem_Click(object sender, EventArgs e)
@@ -203,6 +204,66 @@ namespace Notepad
         private void toolStripButtonSave_Click(object sender, EventArgs e)
         {
             儲存SCtrlSToolStripMenuItem_Click(sender, e);
+        }
+
+        private void 新增NCtrlNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (fileName == "")
+            {
+                DialogResult result = MessageBox.Show("檔案尚未存檔，是否先進行存檔再新增檔案?", "是否存檔?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    SaveFileDialog saveFileDialog = new SaveFileDialog();
+                    saveFileDialog.Title = "請選擇檔案";
+                    saveFileDialog.Filter = "所有檔案(*.*)|*.*";
+                    if (saveFileDialog.ShowDialog() != DialogResult.OK) { saveFileDialog.Dispose(); return; }
+                    FileStream fs = new FileStream(saveFileDialog.FileName, FileMode.Create);
+                    StreamWriter sw = new StreamWriter(fs, Encoding.UTF8);
+                    sw.Write(textBox1.Text);
+                    sw.Close();
+                    fs.Close();
+                    textBox1.Text = "";
+                }
+                else
+                {
+                    textBox1.Text = "";
+                }
+            }
+            else
+            {
+                StreamReader sr = new StreamReader(fileName);
+                if (textBox1.Text == sr.ReadToEnd()) 
+                {
+                    textBox1.Text = "";
+                    fileName = "";
+                }
+                else
+                {
+                    DialogResult result = MessageBox.Show("檔案尚未存檔，是否先進行存檔再新增檔案?", "是否存檔?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        sr.Close();
+                        FileStream fs = new FileStream(fileName, FileMode.Create);
+                        StreamWriter sw = new StreamWriter(fs, Encoding.UTF8);
+                        sw.Write(textBox1.Text);
+                        sw.Close();
+                        fs.Close();
+                        textBox1.Text = "";
+                        fileName = "";
+                    }
+                    else
+                    {
+                        textBox1.Text = "";
+                        fileName = "";
+                    }
+                }
+                sr.Close();
+            }
+        }
+
+        private void toolStripNew_Click(object sender, EventArgs e)
+        {
+            新增NCtrlNToolStripMenuItem_Click(sender, e);
         }
     }
 }
