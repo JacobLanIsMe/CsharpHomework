@@ -24,6 +24,7 @@ using PictureViewer;
 using GuessNumber;
 using Alarm;
 using System.IO;
+using System.Drawing.Drawing2D;
 
 namespace CsharpHomework
 {
@@ -177,25 +178,90 @@ namespace CsharpHomework
         public string[] allJPG;
         private void MainForm_Load(object sender, EventArgs e)
         {
-            allJPG = Directory.GetFiles(@"../../../image", "*.jpg");
+            allJPG = Directory.GetFiles(@"../../../image/BackImage", "*.jpg");
             Random random = new Random();
-            int backImageIndex = random.Next(allJPG.Length);
+            int backImageIndex = random.Next(allJPG.Length-2);
             this.BackgroundImage = new Bitmap(allJPG[backImageIndex]);
+            toolStrip1.BackgroundImage = Image.FromFile(allJPG[backImageIndex+1]);
+            string[] fileName = allJPG[backImageIndex+1].Split('\\');
+            if (fileName[fileName.Length - 1] == "下載(21).jpg") toolStrip1.ForeColor = Color.White;
+            else toolStrip1.ForeColor = Color.Black;
             pictureBox1.Width = this.Size.Width;
+            pictureBox1.Image = Image.FromFile(allJPG[backImageIndex+2]);
+            string[] fileName1 = allJPG[backImageIndex+2].Split('\\');
+            if (fileName1[fileName1.Length - 1] == "下載(21).jpg")
+            {
+                label1.ForeColor = Color.White;
+                labelEngName.ForeColor = Color.White;
+            }
+            else
+            {
+                label1.ForeColor = Color.Black;
+                labelEngName.ForeColor = Color.Black;
+            }
+            label1.Parent = pictureBox1;
+            labelEngName.Parent = pictureBox1;
+            linkLabelGitHub.Parent = pictureBox1;
+            linkLabelLinkedIn.Parent = pictureBox1;
+            GraphicsPath gp = new GraphicsPath();
+            gp.AddEllipse(pictureBoxPhoto.ClientRectangle);
+            Region region = new Region(gp);
+            pictureBoxPhoto.Region = region;
+            gp.Dispose();
+            region.Dispose();
             timer1.Enabled = true;
         }
         int timer = 0;
+        int timer2 = 20;
+        int timer3 = 40;
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (timer % 60 == 0)
             {
                 Random random = new Random();
                 int backImageIndex = random.Next(allJPG.Length);
-                this.BackgroundImage = new Bitmap(allJPG[backImageIndex]);
+                this.BackgroundImage = new Bitmap(allJPG[backImageIndex]); 
+            }
+            if (timer2 % 60 == 0)
+            {
+                Random random = new Random();
+                int backImageIndex = random.Next(allJPG.Length);
+                toolStrip1.BackgroundImage = Image.FromFile(allJPG[backImageIndex]);
+                string[] fileName = allJPG[backImageIndex].Split('\\');
+                if (fileName[fileName.Length-1] == "下載(21).jpg") toolStrip1.ForeColor = Color.White;
+                else toolStrip1.ForeColor = Color.Black;
+            }
+            if (timer3 % 60 == 0)
+            {
+                Random random = new Random();
+                int backImageIndex = random.Next(allJPG.Length);
+                pictureBox1.Image = Image.FromFile(allJPG[backImageIndex]);
+                string[] fileName = allJPG[backImageIndex].Split('\\');
+                if (fileName[fileName.Length - 1] == "下載(21).jpg")
+                {
+                    label1.ForeColor = Color.White;
+                    labelEngName.ForeColor = Color.White;
+                }
+                else 
+                {
+                    label1.ForeColor = Color.Black;
+                    labelEngName.ForeColor = Color.Black;
+                }
+                
             }
             timer += 1;
+            timer2 += 1;
+            timer3 += 1;
         }
 
-        
+        private void linkLabelGitHub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/JacobLanIsMe");
+        }
+
+        private void linkLabelLinkedIn_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.linkedin.com/in/%E7%B4%B9%E7%91%8B-%E8%97%8D-9b7547166/");
+        }
     }
 }

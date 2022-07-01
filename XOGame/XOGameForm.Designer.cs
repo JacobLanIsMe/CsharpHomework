@@ -29,6 +29,7 @@ namespace XOGame
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XOGameForm));
             this.label1 = new System.Windows.Forms.Label();
             this.btn1 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
@@ -46,8 +47,9 @@ namespace XOGame
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(312, 37);
+            this.label1.Location = new System.Drawing.Point(241, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 24);
             this.label1.TabIndex = 0;
@@ -55,9 +57,9 @@ namespace XOGame
             // 
             // btn1
             // 
-            this.btn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btn1.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.Location = new System.Drawing.Point(255, 84);
+            this.btn1.Location = new System.Drawing.Point(184, 86);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(70, 70);
             this.btn1.TabIndex = 1;
@@ -66,9 +68,9 @@ namespace XOGame
             // 
             // btn2
             // 
-            this.btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btn2.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(331, 84);
+            this.btn2.Location = new System.Drawing.Point(260, 86);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(70, 70);
             this.btn2.TabIndex = 2;
@@ -78,9 +80,9 @@ namespace XOGame
             // 
             // btn3
             // 
-            this.btn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btn3.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.Location = new System.Drawing.Point(407, 84);
+            this.btn3.Location = new System.Drawing.Point(336, 86);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(70, 70);
             this.btn3.TabIndex = 3;
@@ -90,9 +92,9 @@ namespace XOGame
             // 
             // btn4
             // 
-            this.btn4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btn4.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn4.Location = new System.Drawing.Point(255, 160);
+            this.btn4.Location = new System.Drawing.Point(184, 162);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(70, 70);
             this.btn4.TabIndex = 4;
@@ -102,9 +104,9 @@ namespace XOGame
             // 
             // btn5
             // 
-            this.btn5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btn5.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.Location = new System.Drawing.Point(331, 160);
+            this.btn5.Location = new System.Drawing.Point(260, 162);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(70, 70);
             this.btn5.TabIndex = 5;
@@ -114,9 +116,9 @@ namespace XOGame
             // 
             // btn6
             // 
-            this.btn6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btn6.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.Location = new System.Drawing.Point(407, 160);
+            this.btn6.Location = new System.Drawing.Point(336, 162);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(70, 70);
             this.btn6.TabIndex = 6;
@@ -126,9 +128,9 @@ namespace XOGame
             // 
             // btn7
             // 
-            this.btn7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btn7.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7.Location = new System.Drawing.Point(255, 236);
+            this.btn7.Location = new System.Drawing.Point(184, 238);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(70, 70);
             this.btn7.TabIndex = 7;
@@ -138,9 +140,9 @@ namespace XOGame
             // 
             // btn8
             // 
-            this.btn8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btn8.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.Location = new System.Drawing.Point(331, 236);
+            this.btn8.Location = new System.Drawing.Point(260, 238);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(70, 70);
             this.btn8.TabIndex = 8;
@@ -150,9 +152,9 @@ namespace XOGame
             // 
             // btn9
             // 
-            this.btn9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btn9.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.Location = new System.Drawing.Point(407, 236);
+            this.btn9.Location = new System.Drawing.Point(336, 238);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(70, 70);
             this.btn9.TabIndex = 9;
@@ -163,7 +165,7 @@ namespace XOGame
             // btnReset
             // 
             this.btnReset.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Location = new System.Drawing.Point(255, 331);
+            this.btnReset.Location = new System.Drawing.Point(184, 333);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(103, 41);
             this.btnReset.TabIndex = 10;
@@ -174,7 +176,7 @@ namespace XOGame
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(374, 331);
+            this.btnExit.Location = new System.Drawing.Point(303, 333);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(103, 41);
             this.btnExit.TabIndex = 11;
@@ -186,7 +188,8 @@ namespace XOGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(597, 450);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btn9);

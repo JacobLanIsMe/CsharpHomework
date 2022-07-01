@@ -52,8 +52,13 @@ namespace CsharpHomework
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.linkLabelLinkedIn = new System.Windows.Forms.LinkLabel();
+            this.linkLabelGitHub = new System.Windows.Forms.LinkLabel();
+            this.pictureBoxPhoto = new System.Windows.Forms.PictureBox();
+            this.labelEngName = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).BeginInit();
             this.SuspendLayout();
             // 
             // splitter1
@@ -62,13 +67,12 @@ namespace CsharpHomework
             this.splitter1.Dock = System.Windows.Forms.DockStyle.Top;
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(985, 112);
+            this.splitter1.Size = new System.Drawing.Size(985, 208);
             this.splitter1.TabIndex = 1;
             this.splitter1.TabStop = false;
             // 
             // toolStrip1
             // 
-            this.toolStrip1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("toolStrip1.BackgroundImage")));
             this.toolStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Left;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -88,9 +92,9 @@ namespace CsharpHomework
             this.toolStripButton1,
             this.toolStripButtonGuess,
             this.toolStripButtonAlarm});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 112);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 208);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(185, 506);
+            this.toolStrip1.Size = new System.Drawing.Size(185, 410);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -229,12 +233,12 @@ namespace CsharpHomework
             // toolStripButtonPainter
             // 
             this.toolStripButtonPainter.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButtonPainter.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.toolStripButtonPainter.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripButtonPainter.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonPainter.Image")));
             this.toolStripButtonPainter.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonPainter.Name = "toolStripButtonPainter";
-            this.toolStripButtonPainter.Size = new System.Drawing.Size(182, 25);
-            this.toolStripButtonPainter.Text = "小畫家";
+            this.toolStripButtonPainter.Size = new System.Drawing.Size(182, 26);
+            this.toolStripButtonPainter.Text = "Paint";
             this.toolStripButtonPainter.Click += new System.EventHandler(this.toolStripButtonPainter_Click);
             // 
             // toolStripButton1
@@ -244,7 +248,7 @@ namespace CsharpHomework
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(182, 26);
+            this.toolStripButton1.Size = new System.Drawing.Size(136, 26);
             this.toolStripButton1.Text = "Picture Viewer";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -255,7 +259,7 @@ namespace CsharpHomework
             this.toolStripButtonGuess.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonGuess.Image")));
             this.toolStripButtonGuess.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonGuess.Name = "toolStripButtonGuess";
-            this.toolStripButtonGuess.Size = new System.Drawing.Size(182, 26);
+            this.toolStripButtonGuess.Size = new System.Drawing.Size(70, 26);
             this.toolStripButtonGuess.Text = "Guess";
             this.toolStripButtonGuess.Click += new System.EventHandler(this.toolStripButtonGuess_Click);
             // 
@@ -266,28 +270,28 @@ namespace CsharpHomework
             this.toolStripButtonAlarm.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonAlarm.Image")));
             this.toolStripButtonAlarm.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonAlarm.Name = "toolStripButtonAlarm";
-            this.toolStripButtonAlarm.Size = new System.Drawing.Size(182, 26);
+            this.toolStripButtonAlarm.Size = new System.Drawing.Size(63, 26);
             this.toolStripButtonAlarm.Text = "Alarm";
             this.toolStripButtonAlarm.Click += new System.EventHandler(this.toolStripButtonAlarm_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Silver;
-            this.label1.Font = new System.Drawing.Font("標楷體", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(175, 32);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("標楷體", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.Location = new System.Drawing.Point(170, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(263, 29);
+            this.label1.Size = new System.Drawing.Size(134, 37);
             this.label1.TabIndex = 4;
-            this.label1.Text = "藍紹瑋的 C# 作業";
+            this.label1.Text = "藍紹瑋";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(155, 109);
+            this.pictureBox1.Size = new System.Drawing.Size(248, 208);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
@@ -295,12 +299,67 @@ namespace CsharpHomework
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // linkLabelLinkedIn
+            // 
+            this.linkLabelLinkedIn.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.linkLabelLinkedIn.AutoSize = true;
+            this.linkLabelLinkedIn.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabelLinkedIn.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelLinkedIn.ForeColor = System.Drawing.Color.Black;
+            this.linkLabelLinkedIn.Location = new System.Drawing.Point(301, 122);
+            this.linkLabelLinkedIn.Name = "linkLabelLinkedIn";
+            this.linkLabelLinkedIn.Size = new System.Drawing.Size(103, 27);
+            this.linkLabelLinkedIn.TabIndex = 8;
+            this.linkLabelLinkedIn.TabStop = true;
+            this.linkLabelLinkedIn.Text = "LinkedIn";
+            this.linkLabelLinkedIn.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelLinkedIn_LinkClicked);
+            // 
+            // linkLabelGitHub
+            // 
+            this.linkLabelGitHub.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.linkLabelGitHub.AutoSize = true;
+            this.linkLabelGitHub.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabelGitHub.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelGitHub.ForeColor = System.Drawing.Color.Black;
+            this.linkLabelGitHub.Location = new System.Drawing.Point(175, 122);
+            this.linkLabelGitHub.Name = "linkLabelGitHub";
+            this.linkLabelGitHub.Size = new System.Drawing.Size(126, 27);
+            this.linkLabelGitHub.TabIndex = 9;
+            this.linkLabelGitHub.TabStop = true;
+            this.linkLabelGitHub.Text = "My GitHub";
+            this.linkLabelGitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelGitHub_LinkClicked);
+            // 
+            // pictureBoxPhoto
+            // 
+            this.pictureBoxPhoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxPhoto.BackgroundImage")));
+            this.pictureBoxPhoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxPhoto.Location = new System.Drawing.Point(32, 53);
+            this.pictureBoxPhoto.Name = "pictureBoxPhoto";
+            this.pictureBoxPhoto.Size = new System.Drawing.Size(113, 113);
+            this.pictureBoxPhoto.TabIndex = 10;
+            this.pictureBoxPhoto.TabStop = false;
+            // 
+            // labelEngName
+            // 
+            this.labelEngName.AutoSize = true;
+            this.labelEngName.BackColor = System.Drawing.Color.Transparent;
+            this.labelEngName.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEngName.Location = new System.Drawing.Point(298, 77);
+            this.labelEngName.Name = "labelEngName";
+            this.labelEngName.Size = new System.Drawing.Size(108, 37);
+            this.labelEngName.TabIndex = 11;
+            this.labelEngName.Text = "Jacob";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(985, 618);
+            this.Controls.Add(this.labelEngName);
+            this.Controls.Add(this.pictureBoxPhoto);
+            this.Controls.Add(this.linkLabelGitHub);
+            this.Controls.Add(this.linkLabelLinkedIn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.pictureBox1);
@@ -314,6 +373,7 @@ namespace CsharpHomework
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -342,6 +402,10 @@ namespace CsharpHomework
         private System.Windows.Forms.ToolStripButton toolStripButtonPainter;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.LinkLabel linkLabelLinkedIn;
+        private System.Windows.Forms.LinkLabel linkLabelGitHub;
+        private System.Windows.Forms.PictureBox pictureBoxPhoto;
+        private System.Windows.Forms.Label labelEngName;
     }
 }
 

@@ -29,6 +29,7 @@ namespace StudentsGrade
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentsGradeForm));
             this.textBoxMath = new System.Windows.Forms.TextBox();
             this.textBoxEnglish = new System.Windows.Forms.TextBox();
             this.textBoxChinese = new System.Windows.Forms.TextBox();
@@ -87,7 +88,9 @@ namespace StudentsGrade
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(13, 168);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 21);
@@ -97,7 +100,9 @@ namespace StudentsGrade
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(13, 120);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 21);
@@ -107,7 +112,9 @@ namespace StudentsGrade
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(13, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 21);
@@ -117,7 +124,9 @@ namespace StudentsGrade
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(13, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 21);
@@ -187,8 +196,10 @@ namespace StudentsGrade
             // 
             // splitContainer1
             // 
+            this.splitContainer1.BackColor = System.Drawing.Color.Transparent;
             this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.splitContainer1.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.splitContainer1.ForeColor = System.Drawing.Color.White;
             this.splitContainer1.Location = new System.Drawing.Point(190, 19);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.splitContainer1.Name = "splitContainer1";
@@ -219,6 +230,7 @@ namespace StudentsGrade
             // 
             // labelTitle
             // 
+            this.labelTitle.ForeColor = System.Drawing.Color.White;
             this.labelTitle.Location = new System.Drawing.Point(2, 7);
             this.labelTitle.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.labelTitle.Name = "labelTitle";
@@ -240,7 +252,8 @@ namespace StudentsGrade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(751, 609);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(751, 417);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.btnRandom20Student);
             this.Controls.Add(this.btnReset);

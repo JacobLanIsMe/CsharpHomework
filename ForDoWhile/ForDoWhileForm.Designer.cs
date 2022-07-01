@@ -29,6 +29,7 @@ namespace ForDoWhile
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(btnClearResult));
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxNumber = new System.Windows.Forms.TextBox();
             this.btnOddOrEven = new System.Windows.Forms.Button();
@@ -66,6 +67,7 @@ namespace ForDoWhile
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(9, 15);
             this.label1.Name = "label1";
@@ -83,20 +85,22 @@ namespace ForDoWhile
             // 
             // btnOddOrEven
             // 
+            this.btnOddOrEven.BackColor = System.Drawing.Color.Transparent;
             this.btnOddOrEven.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnOddOrEven.Location = new System.Drawing.Point(13, 55);
             this.btnOddOrEven.Name = "btnOddOrEven";
             this.btnOddOrEven.Size = new System.Drawing.Size(110, 52);
             this.btnOddOrEven.TabIndex = 2;
             this.btnOddOrEven.Text = "輸入的數為奇數或偶數?";
-            this.btnOddOrEven.UseVisualStyleBackColor = true;
+            this.btnOddOrEven.UseVisualStyleBackColor = false;
             this.btnOddOrEven.Click += new System.EventHandler(this.btnOddOrEven_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(8, 375);
+            this.label2.Location = new System.Drawing.Point(16, 321);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 27);
             this.label2.TabIndex = 3;
@@ -107,7 +111,7 @@ namespace ForDoWhile
             this.labelResult.AutoSize = true;
             this.labelResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.labelResult.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelResult.Location = new System.Drawing.Point(102, 380);
+            this.labelResult.Location = new System.Drawing.Point(110, 326);
             this.labelResult.Name = "labelResult";
             this.labelResult.Size = new System.Drawing.Size(40, 16);
             this.labelResult.TabIndex = 4;
@@ -237,7 +241,7 @@ namespace ForDoWhile
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button4.Location = new System.Drawing.Point(13, 325);
+            this.button4.Location = new System.Drawing.Point(13, 269);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(110, 37);
             this.button4.TabIndex = 16;
@@ -248,6 +252,7 @@ namespace ForDoWhile
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(221, 214);
             this.label3.Name = "label3";
@@ -258,6 +263,7 @@ namespace ForDoWhile
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(221, 249);
             this.label4.Name = "label4";
@@ -268,6 +274,7 @@ namespace ForDoWhile
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(221, 284);
             this.label5.Name = "label5";
@@ -301,35 +308,38 @@ namespace ForDoWhile
             // 
             // btnFor
             // 
+            this.btnFor.BackColor = System.Drawing.Color.Transparent;
             this.btnFor.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFor.Location = new System.Drawing.Point(387, 211);
             this.btnFor.Name = "btnFor";
             this.btnFor.Size = new System.Drawing.Size(68, 29);
             this.btnFor.TabIndex = 23;
             this.btnFor.Text = "for";
-            this.btnFor.UseVisualStyleBackColor = true;
+            this.btnFor.UseVisualStyleBackColor = false;
             this.btnFor.Click += new System.EventHandler(this.btnFor_Click);
             // 
             // btnWhile
             // 
+            this.btnWhile.BackColor = System.Drawing.Color.Transparent;
             this.btnWhile.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWhile.Location = new System.Drawing.Point(387, 246);
             this.btnWhile.Name = "btnWhile";
             this.btnWhile.Size = new System.Drawing.Size(68, 29);
             this.btnWhile.TabIndex = 24;
             this.btnWhile.Text = "while";
-            this.btnWhile.UseVisualStyleBackColor = true;
+            this.btnWhile.UseVisualStyleBackColor = false;
             this.btnWhile.Click += new System.EventHandler(this.btnWhile_Click);
             // 
             // btnDo
             // 
+            this.btnDo.BackColor = System.Drawing.Color.Transparent;
             this.btnDo.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDo.Location = new System.Drawing.Point(387, 281);
             this.btnDo.Name = "btnDo";
             this.btnDo.Size = new System.Drawing.Size(68, 29);
             this.btnDo.TabIndex = 25;
             this.btnDo.Text = "do";
-            this.btnDo.UseVisualStyleBackColor = true;
+            this.btnDo.UseVisualStyleBackColor = false;
             this.btnDo.Click += new System.EventHandler(this.btnDo_Click);
             // 
             // textBoxRows
@@ -343,6 +353,7 @@ namespace ForDoWhile
             // labelRows
             // 
             this.labelRows.AutoSize = true;
+            this.labelRows.BackColor = System.Drawing.Color.Transparent;
             this.labelRows.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRows.Location = new System.Drawing.Point(470, 211);
             this.labelRows.Name = "labelRows";
@@ -398,7 +409,9 @@ namespace ForDoWhile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(815, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(815, 488);
             this.Controls.Add(this.btnLottery);
             this.Controls.Add(this.btn100Binary);
             this.Controls.Add(this.btn99Table);

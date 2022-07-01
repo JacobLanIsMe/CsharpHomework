@@ -24,7 +24,14 @@ namespace StudentGrade_List
 
         private void btnAddStudent_Click(object sender, EventArgs e)
         {
-            students.Add(new Student(textBoxName.Text, Convert.ToInt32(textBoxChinese.Text), Convert.ToInt32(textBoxEnglish.Text), Convert.ToInt32(textBoxMath.Text)));
+            try
+            {
+                students.Add(new Student(textBoxName.Text, Convert.ToInt32(textBoxChinese.Text), Convert.ToInt32(textBoxEnglish.Text), Convert.ToInt32(textBoxMath.Text)));
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("請輸入正確格式");
+            }
             ShowScore(students);
             if (students.Count > 0)
             {
@@ -38,7 +45,15 @@ namespace StudentGrade_List
 
         private void btnInsertStudent_Click(object sender, EventArgs e)
         {
-            students.Insert(0, new Student(textBoxName.Text, Convert.ToInt32(textBoxChinese.Text), Convert.ToInt32(textBoxEnglish.Text), Convert.ToInt32(textBoxMath.Text)));
+            try
+            {
+                students.Insert(0, new Student(textBoxName.Text, Convert.ToInt32(textBoxChinese.Text), Convert.ToInt32(textBoxEnglish.Text), Convert.ToInt32(textBoxMath.Text)));
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("請輸入正確格式");
+            }
+            
             ShowScore(students);
             if(students.Count > 0)
             {

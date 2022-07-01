@@ -29,6 +29,7 @@ namespace POS
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BarPOS));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnWine = new System.Windows.Forms.Button();
             this.btnWhisky = new System.Windows.Forms.Button();
@@ -57,13 +58,14 @@ namespace POS
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnWine);
             this.panel1.Controls.Add(this.btnWhisky);
             this.panel1.Controls.Add(this.btnTequila);
             this.panel1.Controls.Add(this.btnBeer);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(5, 73);
+            this.panel1.Location = new System.Drawing.Point(43, 65);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(210, 342);
             this.panel1.TabIndex = 0;
@@ -71,6 +73,8 @@ namespace POS
             // btnWine
             // 
             this.btnWine.BackColor = System.Drawing.Color.White;
+            this.btnWine.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnWine.BackgroundImage")));
+            this.btnWine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnWine.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnWine.Location = new System.Drawing.Point(104, 178);
             this.btnWine.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
@@ -84,7 +88,8 @@ namespace POS
             // btnWhisky
             // 
             this.btnWhisky.BackColor = System.Drawing.Color.White;
-            this.btnWhisky.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnWhisky.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnWhisky.BackgroundImage")));
+            this.btnWhisky.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnWhisky.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnWhisky.Location = new System.Drawing.Point(2, 178);
             this.btnWhisky.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
@@ -98,7 +103,8 @@ namespace POS
             // btnTequila
             // 
             this.btnTequila.BackColor = System.Drawing.Color.White;
-            this.btnTequila.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnTequila.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTequila.BackgroundImage")));
+            this.btnTequila.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTequila.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnTequila.Location = new System.Drawing.Point(104, 42);
             this.btnTequila.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
@@ -112,7 +118,8 @@ namespace POS
             // btnBeer
             // 
             this.btnBeer.BackColor = System.Drawing.Color.White;
-            this.btnBeer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBeer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBeer.BackgroundImage")));
+            this.btnBeer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBeer.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnBeer.ForeColor = System.Drawing.Color.Black;
             this.btnBeer.Location = new System.Drawing.Point(2, 42);
@@ -136,11 +143,12 @@ namespace POS
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.textBoxTotalPrice);
             this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.label14);
-            this.panel3.Location = new System.Drawing.Point(219, 73);
+            this.panel3.Location = new System.Drawing.Point(257, 65);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(176, 98);
             this.panel3.TabIndex = 1;
@@ -181,12 +189,13 @@ namespace POS
             // 
             // panel7
             // 
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.label17);
             this.panel7.Controls.Add(this.btnCreditCard);
             this.panel7.Controls.Add(this.btnCash);
             this.panel7.Controls.Add(this.label19);
-            this.panel7.Location = new System.Drawing.Point(219, 177);
+            this.panel7.Location = new System.Drawing.Point(257, 169);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(176, 98);
             this.panel7.TabIndex = 3;
@@ -236,12 +245,13 @@ namespace POS
             // 
             // panel8
             // 
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.button3);
             this.panel8.Controls.Add(this.listBox1);
             this.panel8.Controls.Add(this.label20);
             this.panel8.Controls.Add(this.label18);
-            this.panel8.Location = new System.Drawing.Point(399, 73);
+            this.panel8.Location = new System.Drawing.Point(437, 65);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(273, 342);
             this.panel8.TabIndex = 4;
@@ -259,12 +269,13 @@ namespace POS
             // 
             // listBox1
             // 
+            this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.listBox1.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
             this.listBox1.Items.AddRange(new object[] {
             "                        尚未點餐"});
-            this.listBox1.Location = new System.Drawing.Point(5, 33);
+            this.listBox1.Location = new System.Drawing.Point(4, 33);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(263, 244);
             this.listBox1.TabIndex = 4;
@@ -293,6 +304,8 @@ namespace POS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(753, 479);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);

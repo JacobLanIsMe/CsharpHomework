@@ -29,6 +29,7 @@ namespace GuessNumber
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(YourNumber));
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxYourNumber = new System.Windows.Forms.TextBox();
             this.btnEnter = new System.Windows.Forms.Button();
@@ -38,6 +39,7 @@ namespace GuessNumber
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(48, 60);
             this.label1.Name = "label1";
@@ -78,6 +80,8 @@ namespace GuessNumber
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(601, 281);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnEnter);

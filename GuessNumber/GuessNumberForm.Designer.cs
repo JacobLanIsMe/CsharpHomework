@@ -29,6 +29,7 @@ namespace GuessNumber
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GuessNumberForm));
             this.labelCondition = new System.Windows.Forms.Label();
             this.btnGuess = new System.Windows.Forms.Button();
             this.btnShowAnswer = new System.Windows.Forms.Button();
@@ -37,6 +38,7 @@ namespace GuessNumber
             // labelCondition
             // 
             this.labelCondition.AutoSize = true;
+            this.labelCondition.BackColor = System.Drawing.Color.Transparent;
             this.labelCondition.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCondition.Location = new System.Drawing.Point(114, 81);
             this.labelCondition.Name = "labelCondition";
@@ -70,6 +72,8 @@ namespace GuessNumber
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(679, 340);
             this.Controls.Add(this.btnShowAnswer);
             this.Controls.Add(this.btnGuess);

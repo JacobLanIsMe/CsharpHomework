@@ -29,6 +29,7 @@ namespace Hello
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HelloForm));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,81 +45,94 @@ namespace Hello
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("標楷體", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(177, 144);
+            this.label1.Location = new System.Drawing.Point(82, 72);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 43);
+            this.label1.Size = new System.Drawing.Size(65, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "姓名:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(177, 254);
+            this.label2.Location = new System.Drawing.Point(82, 127);
+            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(256, 42);
+            this.label2.Size = new System.Drawing.Size(132, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "English Name:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("標楷體", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label3.Location = new System.Drawing.Point(177, 364);
+            this.label3.Location = new System.Drawing.Point(82, 182);
+            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(129, 43);
+            this.label3.Size = new System.Drawing.Size(65, 22);
             this.label3.TabIndex = 2;
             this.label3.Text = "性別:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("標楷體", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label4.Location = new System.Drawing.Point(177, 475);
+            this.label4.Location = new System.Drawing.Point(82, 238);
+            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 43);
+            this.label4.Size = new System.Drawing.Size(65, 22);
             this.label4.TabIndex = 3;
             this.label4.Text = "星座:";
             // 
             // textBoxChiName
             // 
             this.textBoxChiName.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBoxChiName.Location = new System.Drawing.Point(505, 139);
+            this.textBoxChiName.Location = new System.Drawing.Point(233, 70);
+            this.textBoxChiName.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.textBoxChiName.Name = "textBoxChiName";
-            this.textBoxChiName.Size = new System.Drawing.Size(300, 52);
+            this.textBoxChiName.Size = new System.Drawing.Size(141, 30);
             this.textBoxChiName.TabIndex = 0;
             // 
             // textBoxGender
             // 
             this.textBoxGender.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBoxGender.Location = new System.Drawing.Point(505, 359);
+            this.textBoxGender.Location = new System.Drawing.Point(233, 180);
+            this.textBoxGender.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.textBoxGender.Name = "textBoxGender";
-            this.textBoxGender.Size = new System.Drawing.Size(300, 52);
+            this.textBoxGender.Size = new System.Drawing.Size(141, 30);
             this.textBoxGender.TabIndex = 4;
             // 
             // textBoxZodiac
             // 
             this.textBoxZodiac.Font = new System.Drawing.Font("標楷體", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBoxZodiac.Location = new System.Drawing.Point(505, 470);
+            this.textBoxZodiac.Location = new System.Drawing.Point(233, 235);
+            this.textBoxZodiac.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.textBoxZodiac.Name = "textBoxZodiac";
-            this.textBoxZodiac.Size = new System.Drawing.Size(300, 52);
+            this.textBoxZodiac.Size = new System.Drawing.Size(141, 30);
             this.textBoxZodiac.TabIndex = 5;
             // 
             // textBoxEngName
             // 
             this.textBoxEngName.Font = new System.Drawing.Font("Arial", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxEngName.Location = new System.Drawing.Point(505, 250);
+            this.textBoxEngName.Location = new System.Drawing.Point(233, 125);
+            this.textBoxEngName.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.textBoxEngName.Name = "textBoxEngName";
-            this.textBoxEngName.Size = new System.Drawing.Size(300, 50);
+            this.textBoxEngName.Size = new System.Drawing.Size(141, 29);
             this.textBoxEngName.TabIndex = 6;
             // 
             // btnHello
             // 
             this.btnHello.Font = new System.Drawing.Font("Arial", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHello.Location = new System.Drawing.Point(177, 581);
+            this.btnHello.Location = new System.Drawing.Point(82, 290);
+            this.btnHello.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnHello.Name = "btnHello";
-            this.btnHello.Size = new System.Drawing.Size(300, 60);
+            this.btnHello.Size = new System.Drawing.Size(138, 30);
             this.btnHello.TabIndex = 7;
             this.btnHello.Text = "Say Hello!";
             this.btnHello.UseVisualStyleBackColor = true;
@@ -127,9 +141,10 @@ namespace Hello
             // btnHi
             // 
             this.btnHi.Font = new System.Drawing.Font("Arial", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHi.Location = new System.Drawing.Point(505, 581);
+            this.btnHi.Location = new System.Drawing.Point(233, 290);
+            this.btnHi.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnHi.Name = "btnHi";
-            this.btnHi.Size = new System.Drawing.Size(300, 60);
+            this.btnHi.Size = new System.Drawing.Size(138, 30);
             this.btnHi.TabIndex = 8;
             this.btnHi.Text = "Say Hi!";
             this.btnHi.UseVisualStyleBackColor = true;
@@ -137,9 +152,11 @@ namespace Hello
             // 
             // HelloForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1174, 889);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(542, 440);
             this.Controls.Add(this.btnHi);
             this.Controls.Add(this.btnHello);
             this.Controls.Add(this.textBoxEngName);
@@ -150,6 +167,7 @@ namespace Hello
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.Name = "HelloForm";
             this.Text = "你好! C#";
             this.ResumeLayout(false);

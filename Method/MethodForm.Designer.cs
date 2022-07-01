@@ -29,6 +29,7 @@ namespace Method
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(btnClearResult));
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxNumber = new System.Windows.Forms.TextBox();
             this.btnOddOrEven = new System.Windows.Forms.Button();
@@ -51,6 +52,7 @@ namespace Method
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(9, 15);
             this.label1.Name = "label1";
@@ -80,8 +82,9 @@ namespace Method
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(178, 228);
+            this.label2.Location = new System.Drawing.Point(128, 225);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 27);
             this.label2.TabIndex = 3;
@@ -92,7 +95,7 @@ namespace Method
             this.labelResult.AutoSize = true;
             this.labelResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.labelResult.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelResult.Location = new System.Drawing.Point(272, 233);
+            this.labelResult.Location = new System.Drawing.Point(222, 230);
             this.labelResult.Name = "labelResult";
             this.labelResult.Size = new System.Drawing.Size(40, 16);
             this.labelResult.TabIndex = 4;
@@ -222,7 +225,7 @@ namespace Method
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button4.Location = new System.Drawing.Point(62, 223);
+            this.button4.Location = new System.Drawing.Point(12, 220);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(110, 37);
             this.button4.TabIndex = 16;
@@ -234,6 +237,8 @@ namespace Method
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnSwap);
