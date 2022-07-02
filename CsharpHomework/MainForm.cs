@@ -172,8 +172,10 @@ namespace CsharpHomework
             if (ActiveMdiChild != null) ActiveMdiChild.Close();
             DrawPaintForm drawPaintForm = new DrawPaintForm();
             drawPaintForm.MdiParent = this;
-            drawPaintForm.StartPosition = FormStartPosition.CenterScreen;
+            //drawPaintForm.StartPosition = FormStartPosition.CenterScreen;
+            drawPaintForm.Dock = DockStyle.Fill;
             drawPaintForm.Show();
+            
         }
         public string[] allJPG;
         private void MainForm_Load(object sender, EventArgs e)
@@ -216,7 +218,7 @@ namespace CsharpHomework
         int timer3 = 40;
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (timer % 60 == 0)
+            if (timer % 300 == 0)
             {
                 Random random = new Random();
                 int backImageIndex = random.Next(allJPG.Length);
@@ -247,7 +249,6 @@ namespace CsharpHomework
                     label1.ForeColor = Color.Black;
                     labelEngName.ForeColor = Color.Black;
                 }
-                
             }
             timer += 1;
             timer2 += 1;
