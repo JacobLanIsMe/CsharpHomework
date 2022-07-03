@@ -34,6 +34,7 @@ namespace DrawPaint
             this.buttonColorPicker = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButtonPaintingBrush = new System.Windows.Forms.RadioButton();
             this.radioButtonEraser = new System.Windows.Forms.RadioButton();
             this.radioButtonMarkerPen = new System.Windows.Forms.RadioButton();
             this.radioButtonBrush = new System.Windows.Forms.RadioButton();
@@ -49,7 +50,7 @@ namespace DrawPaint
             this.trackBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.trackBar1.BackColor = System.Drawing.Color.White;
             this.trackBar1.CausesValidation = false;
-            this.trackBar1.Location = new System.Drawing.Point(688, 257);
+            this.trackBar1.Location = new System.Drawing.Point(688, 274);
             this.trackBar1.Maximum = 30;
             this.trackBar1.Minimum = 1;
             this.trackBar1.Name = "trackBar1";
@@ -66,7 +67,7 @@ namespace DrawPaint
             this.labelPenPoint.AutoSize = true;
             this.labelPenPoint.BackColor = System.Drawing.Color.White;
             this.labelPenPoint.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPenPoint.Location = new System.Drawing.Point(688, 410);
+            this.labelPenPoint.Location = new System.Drawing.Point(688, 427);
             this.labelPenPoint.Name = "labelPenPoint";
             this.labelPenPoint.Size = new System.Drawing.Size(18, 19);
             this.labelPenPoint.TabIndex = 1;
@@ -78,7 +79,7 @@ namespace DrawPaint
             this.buttonColorPicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonColorPicker.BackColor = System.Drawing.Color.Black;
             this.buttonColorPicker.Font = new System.Drawing.Font("標楷體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonColorPicker.Location = new System.Drawing.Point(688, 206);
+            this.buttonColorPicker.Location = new System.Drawing.Point(688, 223);
             this.buttonColorPicker.Name = "buttonColorPicker";
             this.buttonColorPicker.Size = new System.Drawing.Size(45, 45);
             this.buttonColorPicker.TabIndex = 2;
@@ -100,23 +101,37 @@ namespace DrawPaint
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.radioButtonPaintingBrush);
             this.groupBox1.Controls.Add(this.radioButtonEraser);
             this.groupBox1.Controls.Add(this.radioButtonMarkerPen);
             this.groupBox1.Controls.Add(this.radioButtonBrush);
             this.groupBox1.Controls.Add(this.radioButtonPen);
             this.groupBox1.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox1.Location = new System.Drawing.Point(605, 33);
+            this.groupBox1.Location = new System.Drawing.Point(598, 29);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(128, 133);
+            this.groupBox1.Size = new System.Drawing.Size(135, 154);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "選擇畫筆";
+            // 
+            // radioButtonPaintingBrush
+            // 
+            this.radioButtonPaintingBrush.AutoSize = true;
+            this.radioButtonPaintingBrush.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonPaintingBrush.Location = new System.Drawing.Point(7, 72);
+            this.radioButtonPaintingBrush.Name = "radioButtonPaintingBrush";
+            this.radioButtonPaintingBrush.Size = new System.Drawing.Size(125, 22);
+            this.radioButtonPaintingBrush.TabIndex = 4;
+            this.radioButtonPaintingBrush.TabStop = true;
+            this.radioButtonPaintingBrush.Text = "Painting bursh";
+            this.radioButtonPaintingBrush.UseVisualStyleBackColor = true;
+            this.radioButtonPaintingBrush.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
             // 
             // radioButtonEraser
             // 
             this.radioButtonEraser.AutoSize = true;
             this.radioButtonEraser.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonEraser.Location = new System.Drawing.Point(7, 100);
+            this.radioButtonEraser.Location = new System.Drawing.Point(7, 122);
             this.radioButtonEraser.Name = "radioButtonEraser";
             this.radioButtonEraser.Size = new System.Drawing.Size(73, 22);
             this.radioButtonEraser.TabIndex = 3;
@@ -129,7 +144,7 @@ namespace DrawPaint
             // 
             this.radioButtonMarkerPen.AutoSize = true;
             this.radioButtonMarkerPen.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonMarkerPen.Location = new System.Drawing.Point(7, 74);
+            this.radioButtonMarkerPen.Location = new System.Drawing.Point(7, 97);
             this.radioButtonMarkerPen.Name = "radioButtonMarkerPen";
             this.radioButtonMarkerPen.Size = new System.Drawing.Size(107, 22);
             this.radioButtonMarkerPen.TabIndex = 2;
@@ -140,7 +155,7 @@ namespace DrawPaint
             // 
             this.radioButtonBrush.AutoSize = true;
             this.radioButtonBrush.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonBrush.Location = new System.Drawing.Point(7, 48);
+            this.radioButtonBrush.Location = new System.Drawing.Point(7, 47);
             this.radioButtonBrush.Name = "radioButtonBrush";
             this.radioButtonBrush.Size = new System.Drawing.Size(66, 22);
             this.radioButtonBrush.TabIndex = 1;
@@ -167,9 +182,9 @@ namespace DrawPaint
             this.btnAllClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAllClear.BackColor = System.Drawing.Color.White;
             this.btnAllClear.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnAllClear.Location = new System.Drawing.Point(605, 172);
+            this.btnAllClear.Location = new System.Drawing.Point(598, 189);
             this.btnAllClear.Name = "btnAllClear";
-            this.btnAllClear.Size = new System.Drawing.Size(128, 28);
+            this.btnAllClear.Size = new System.Drawing.Size(135, 28);
             this.btnAllClear.TabIndex = 6;
             this.btnAllClear.Text = "全部清除";
             this.btnAllClear.UseVisualStyleBackColor = false;
@@ -210,6 +225,7 @@ namespace DrawPaint
         private System.Windows.Forms.RadioButton radioButtonMarkerPen;
         private System.Windows.Forms.Button btnAllClear;
         private System.Windows.Forms.RadioButton radioButtonEraser;
+        private System.Windows.Forms.RadioButton radioButtonPaintingBrush;
     }
 }
 

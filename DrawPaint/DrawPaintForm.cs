@@ -22,6 +22,7 @@ namespace DrawPaint
         Color penColor = Color.Black;
         Graphics g;
         string selectedPen = "Pencil";
+        byte R = 0, G = 0, B = 0;
 
         private void DrawPaintForm_Load(object sender, EventArgs e)
         {
@@ -56,6 +57,12 @@ namespace DrawPaint
                     g.DrawEllipse(pen, e.X, e.Y, penPoint, penPoint);
                     pen.Dispose();
                 }
+                if (selectedPen == "Painting brush")
+                {
+                    Pen pen = new Pen(Color.FromArgb(50, R, G, B), penPoint);
+                    g.DrawEllipse(pen, e.X, e.Y, penPoint, penPoint);
+                    pen.Dispose();
+                }
                 if (selectedPen == "Marker Pen")
                 {
                     SolidBrush solidBrush = new SolidBrush(penColor);
@@ -86,6 +93,14 @@ namespace DrawPaint
             else if (radioButtonBrush.Checked)
             {
                 selectedPen = "Brush";
+                trackBar1.Minimum = 5;
+                trackBar1.Maximum = 30;
+                labelPenPoint.Text = trackBar1.Value.ToString();
+                penPoint = trackBar1.Value;
+            }
+            else if (radioButtonPaintingBrush.Checked)
+            {
+                selectedPen = "Painting brush";
                 trackBar1.Minimum = 5;
                 trackBar1.Maximum = 30;
                 labelPenPoint.Text = trackBar1.Value.ToString();
@@ -129,6 +144,9 @@ namespace DrawPaint
             if (colorDialog.ShowDialog() != DialogResult.OK) { colorDialog.Dispose(); return; }
             buttonColorPicker.BackColor = colorDialog.Color;
             penColor = colorDialog.Color;
+            R = colorDialog.Color.R;
+            G = colorDialog.Color.G;
+            B = colorDialog.Color.B;
         }
 
         
