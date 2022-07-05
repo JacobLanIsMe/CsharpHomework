@@ -79,6 +79,7 @@ namespace StudentGrade_List
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.labelStatistics);
+            this.splitContainer1.Panel2.ForeColor = System.Drawing.Color.White;
             this.splitContainer1.Size = new System.Drawing.Size(509, 366);
             this.splitContainer1.SplitterDistance = 278;
             this.splitContainer1.SplitterWidth = 2;
